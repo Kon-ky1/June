@@ -2710,8 +2710,7 @@ interactiveMessage: {
 {
 "name": "quick_reply",
 "buttonParamsJson": "{\"display_text\":\"⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻\nI wanna fuck your shithole bruh😋😘\",\"id\":\".terkentod\"}"
-}
-],},
+},
 {
 "name": "quick_reply",
 "buttonParamsJson": "{\"display_text\":\"𝐑𝐮𝐧𝐭𝐢𝐦𝐞\n How long has 𝐉𝐄𝐒𝐓𝐄𝐑 𝐌𝐃 been active? 🤔\",\"id\":\".r\"}"
@@ -2898,8 +2897,7 @@ interactiveMessage: {
 {
 "name": "quick_reply",
 "buttonParamsJson": "{\"display_text\":\"⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻\nI wanna fuck your shithole bruh😋😘\",\"id\":\".terkentod\"}"
-}
-],},
+},
 {
 "name": "quick_reply",
 "buttonParamsJson": "{\"display_text\":\"𝐑𝐮𝐧𝐭𝐢𝐦𝐞\n How long has 𝐉𝐄𝐒𝐓𝐄𝐑 𝐌𝐃 been active? 🤔\",\"id\":\".r\"}"
@@ -2991,8 +2989,7 @@ interactiveMessage: {
 {
 "name": "quick_reply",
 "buttonParamsJson": "{\"display_text\":\"⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻\nI wanna fuck your shithole bruh😋😘\",\"id\":\".terkentod\"}"
-}
-],},
+},
 {
 "name": "quick_reply",
 "buttonParamsJson": "{\"display_text\":\"𝐑𝐮𝐧𝐭𝐢𝐦𝐞\n How long has 𝐉𝐄𝐒𝐓𝐄𝐑 𝐌𝐃 been active? 🤔\",\"id\":\".r\"}"
@@ -3074,7 +3071,7 @@ let totalCases = caseCount,
 listCases = caseNames.join('\n⭔ ');
 
 joreply(`
-╭❐  ⌜⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ ⌟  ❐
+╭❐  ⌜ ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ ⌟  ❐
 │⭔ Creator : ⟠ 𝐃𝐑𝚺𝐗 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 々
 │⭔ Library : WS-Baileys
 │⭔ Type : Case
@@ -3096,10 +3093,10 @@ break
 case 'ping': case 'p': {
 let timestamp = speed()
 let latensi = speed() - timestamp
-m.reply(`⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ 𝐒𝐏𝐄𝐄𝐃\n *${latensi.toFixed(4)} ms*`)
+joreply(`⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ 𝐒𝐏𝐄𝐄𝐃\n *${latensi.toFixed(4)} ms*`)
 }
 break
-
+//=================================================//
 case 'a': case "alive":
 const audiovn = "./raven.aac";
     const dooc = {
@@ -3129,7 +3126,7 @@ await ryozingod.sendMessage(m.chat, dooc, {quoted: m});
 
 
 break;
-
+//=================================================//
 case 'r': case 'runtime':
                 let pinga = `⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ 𝐡𝐚𝐬 𝐛𝐞𝐞𝐧 𝐫𝐮𝐧𝐧𝐢𝐧𝐠 𝐟𝐨𝐫 ${runtime(process.uptime())}`
                 ryozingod.sendMessage(m.chat, {
@@ -3149,7 +3146,7 @@ case 'r': case 'runtime':
                     quoted: m
                 })
                 break
-
+//=================================================//
 case 'buttons': case 'button':
 if (!isDeveloper) return joreply(mess.owner)
 if (args.length < 1) return joreply(`Example ${prefix + command} on/off`)
