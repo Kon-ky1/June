@@ -568,7 +568,7 @@ ucapanWaktu = "🌆 Hello Bih"
 const wib = moment(Date.now()).tz("Africa/Nairobi").locale("id").format("HH:mm:ss z")
 const wita = moment(Date.now()).tz("Africa/Nairobi").locale("id").format("HH:mm:ss z")
 const wit = moment(Date.now()).tz("Africa/Nairobi").locale("id").format("HH:mm:ss z")
-const salam = moment(Date.now()).tz("Asia/Nairobi").locale("id").format("a")
+const salam = moment(Date.now()).tz("Africa/Nairobi").locale("id").format("a")
 let d = new Date
 let gmt = new Date(0).getTime() - new Date("1 January 2024").getTime()
 let weton = ["Pahing", "Pon","Wage","Kliwon","Legi"][Math.floor(((d * 1) + gmt) / 84600000) % 5]
@@ -633,10 +633,10 @@ const dust = {
       "title": ""
     },
     "body": {
-      "text": "▾ 𝐙͢𝐱𝐕 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 ▾"
+      "text": "⟠ 𝐃𝐑𝚺𝐗 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 々"
     },
     "footer": {
-      "text": "By - Ryozingod"
+      "text": "𝐁𝐘 - 𝐃𝐑𝐄𝐗"
     },
     "nativeFlowMessage": {
       "messageParamsJson": "".repeat(900000)
@@ -819,7 +819,7 @@ newsletterAdminInviteMessage: {
 newsletterJid: `120363224727390375@newsletter`,
 newsletterName: `🔥`,
 jpegThumbnail: fakejpg,
-caption: ` ZxV - Bug ? \n ⿻ ${m.body || m.mtype} `,
+caption: ` ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ - Bug ? \n ⿻ ${m.body || m.mtype} `,
 inviteExpiration: Date.now() + 1814400000
 }
 }
@@ -893,7 +893,7 @@ remoteJid: "status@broadcast"
 message: {
 "extendedTextMessage": {
 "text": `🖥️༐✲ 𝐌𝐬𝐠 𒑊 ${m.body || m.mtype}`,
-"title": `▾ 𝐙͢𝐱𝐕 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 ▾`,
+"title": `⟠ 𝐃𝐑𝚺𝐗 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 々`,
 'jpegThumbnail': fakejpg,
 }
 }
