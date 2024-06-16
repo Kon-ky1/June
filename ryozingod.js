@@ -2148,7 +2148,7 @@ interactiveMessage: {
 "sections": [
 {
 "title": "👾 Choose One Of Them ⭐",
-"highlight_label": "#ALL COMMANDS BY DREX 👹",
+"highlight_label": "#ALL COMMANDA BY DREX ,👺",
 "rows": [
 {
 "header": "[ ❇️ ] • ALL CMD",
@@ -2169,7 +2169,7 @@ interactiveMessage: {
 },
 {
 "title": "🍷 SUPERIOR COMMAND ♦️",
-"highlight_label": "#BUG COMMANDS BY DREX 👺",
+"highlight_label": "#DREX BUG COMMANDS🪲",
 "rows": [
 {
 "header": "🎩 - BUG MENU ‼️",
@@ -2184,6 +2184,7 @@ interactiveMessage: {
 ]
 }
 ]
+}`
 },
 {
 "name": "cta_url",
@@ -2219,7 +2220,7 @@ interactiveMessage: {
 "isForwarded": true,
 "forwardedNewsletterMessageInfo": {
 "newsletterJid": '0@newsletter',
-"newsletterName": '𝐑𝐀𝐕𝐄𝐍 𝐌𝐃 - 𝐁𝐘 𝐃𝐑𝐄𝐗',
+"newsletterName": 'By Zero Execution Vault',
 "serverMessageId": 1
 },
 },
@@ -2232,11 +2233,11 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "*# 𝐑𝐀𝐕𝐄𝐍 𝐌𝐃 - 𝐁𝐘 𝐃𝐑𝐄𝐗*"
+"text": "*𝐑𝐀𝐕𝐄𝐍 𝐌𝐃 - 𝐁𝐘 𝐃𝐑𝐄𝐗*"
 },
 "nativeFlowMessage": {
 "buttons": [
-{ "name": "cta_url", "buttonParamsJson": `{ display_text : '🎩 ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻❗', url : "https://whatsapp.com/channel/0029Vabz7vUJ3jutx2fNsf2P", merchant_url : "https://whatsapp.com/channel/0029Vabz7vUJ3jutx2fNsf2P" }`}
+{ "name": "cta_url", "buttonParamsJson": `{ display_text : '🎩 ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻❗', url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4", merchant_url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4" }`}
 ],
 "messageParamsJson": ""
 }
