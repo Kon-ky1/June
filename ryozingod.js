@@ -3090,6 +3090,18 @@ joreply(`
 }
 break
 //=================================================//
+case 'getcase':
+                if (!isDeveloper) return joreply(mess.owner);
+                try {
+                   const getCase = (cases) => {
+                      return "case" + `'${cases}'` + fs.readFileSync("ryozingod.js").toString().split('case \'' + cases + '\'')[1].split("break")[0] + "break"
+                   }
+                   joreply(`${getCase(q)}`)
+                } catch {
+                  joreply(`> *case ${q} not found!*`)
+                }
+            break
+//=================================================//
 case 'ping': case 'p': {
 let timestamp = speed()
 let latensi = speed() - timestamp
@@ -3113,11 +3125,11 @@ const audiovn = "./raven.aac";
           externalAdReply: {
           title: "𝐑𝐀𝐕𝐄𝐍 𝐌𝐃 𝚰𝐒 𝚮𝚵𝚪𝚵 𝚻𝚯 𝐖𝚯𝚪𝐒𝚵𝚴 𝐔𝚸 𝐘𝚯𝐔𝚪 𝐃𝚵𝐋𝚰𝐆𝚮𝚻𝐅𝐔𝐋 𝐃𝚫𝐘",
           body: "https://chat.whatsapp.com/LqYfmGAmfbnHhtSWSsXP1v",
-          thumbnailUrl: "https://telegra.ph/file/0306c4f8fa483efd9aa27.jpg",
+          thumbnailUrl: "https://telegra.ph/file/30750b19ab2041daa6528.jpg",
           sourceUrl: "https://chat.whatsapp.com/LqYfmGAmfbnHhtSWSsXP1v",
           mediaType: 1,
 	  showAdAttribution: true,
-          renderLargerThumbnail: true,
+          renderLargerThumbnail: false,
           }}
       };
 
@@ -3136,10 +3148,10 @@ case 'r': case 'runtime':
                             showAdAttribution: true,
                             title: '⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ - 𝐁𝐘 𝐃𝐑𝐄𝐗',
                             body: 'https://chat.whatsapp.com/LqYfmGAmfbnHhtSWSsXP1v',
-                            thumbnailUrl: 'https://telegra.ph/file/47bfd633af1cff2ede42d.jpg',
+                            thumbnailUrl: 'https://telegra.ph/file/30750b19ab2041daa6528.jpg',
                             sourceUrl: 'https://chat.whatsapp.com/LqYfmGAmfbnHhtSWSsXP1v',
                             mediaType: 1,
-                            renderLargerThumbnail: true
+                            renderLargerThumbnail: false
                         }
                     }
                 }, {
