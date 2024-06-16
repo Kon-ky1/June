@@ -2986,7 +2986,6 @@ interactiveMessage: {
 "nativeFlowMessage": {
 "buttons": [
 {
-{
 "name": "quick_reply",
 "buttonParamsJson": "{\"display_text\":\"⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻\nI wanna fuck your shithole bruh😋😘\",\"id\":\".terkentod\"}"
 },
@@ -3040,7 +3039,8 @@ interactiveMessage: {
 },
 "nativeFlowMessage": {
 "buttons": [
-{ "name": "cta_url", "buttonParamsJson": `{ display_text : '🎩 ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻❗', url : "https://whatsapp.com/channel/0029Vabz7vUJ3jutx2fNsf2P", merchant_url : "https://whatsapp.com/channel/0029Vabz7vUJ3jutx2fNsf2P" }`}
+{ 
+"name": "cta_url", "buttonParamsJson": `{ display_text : '🎩 ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻❗', url : "https://whatsapp.com/channel/0029Vabz7vUJ3jutx2fNsf2P", merchant_url : "https://whatsapp.com/channel/0029Vabz7vUJ3jutx2fNsf2P" }`}
 ],
 "messageParamsJson": ""
 }
