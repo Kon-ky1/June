@@ -442,8 +442,8 @@ const setting = db.data.settings[botNumber]
     		if (!isNumber(setting.status)) setting.status = 0
     		if (!('autobio' in setting)) setting.autobio = false
             if (!('autoread' in setting)) setting.autoread = false
-            if (!('autoTyping' in setting)) setting.autoTyping = false
-            if (!('autoRecord' in setting)) setting.autoRecord = false
+            if (!('autoTyping' in setting)) setting.autoTyping = true
+            if (!('autoRecord' in setting)) setting.autoRecord = true
 //        if (!('goodbye' in setting)) chats.goodbye = setting.auto_leaveMsg
 //        if (!('welcome' in setting)) chats.welcome = setting.auto_welcomeMsg
        if (!('onlygrub' in setting)) setting.onlygrub = false
@@ -452,13 +452,13 @@ const setting = db.data.settings[botNumber]
     		status: 0,
     		stock:10,
     		autobio: false,
-    		autoTyping: false,
+    		autoTyping: true,
 //    		auto_ai_grup: true,
 //    		goodbye: true,
     		onlygrub: false,
 //        welcome: true, 
     		autoread: false,
-    		menuType: 'imageIos' //> buttonImage
+    		menuType: 'buttonImage' //> imageIos
 	    }
 
 } catch (err) {
@@ -507,7 +507,7 @@ if (db.data.settings[botNumber].autobio) {
 let setting = db.data.settings[botNumber]
 if (new Date() * 1 - setting.status > 1000) {
 let uptime = await runtime(process.uptime())
-await ryozingod.updateProfileStatus(`✳️ ZeroXV - Client By : Thezetsuboxygen || ✅ Runtime : ${uptime}`)
+await ryozingod.updateProfileStatus(`✳️ ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ - 𝐂𝐑𝐄𝐀𝐓𝐄𝐃 𝐁𝐘 : 𝐃𝐑𝐄𝐗 𝐂𝐋𝐈𝐄𝐍𝐓 || ✅ Runtime : ${uptime}`)
 setting.status = new Date() * 1
 }
 }
@@ -552,23 +552,23 @@ return crypto.randomBytes(size).toString('hex').slice(0, size)
 //=================================================//
 //Ini Waktu | Waktu adalah emas,maka dari itu sentuh lah rumput.dan jangan nolep dikamar terus,usahakan tu kontol jangan dikocok terus.Lutut ama sikut lu kopong nanti
 const moment = require('moment-timezone');
-const time = moment().tz("Asia/Jakarta").format("HH:mm:ss");
+const time = moment().tz("Africa/Nairobi").format("HH:mm:ss");
 let ucapanWaktu
 if (time >= "19:00:00" && time < "23:59:00") {
-ucapanWaktu = "🌃 Selamat Malam"
+ucapanWaktu = "🌃 Good Night"
 } else if (time >= "15:00:00" && time < "19:00:00") {
-ucapanWaktu = "🌄 Selamat Sore"
+ucapanWaktu = "🌄 Good Evening"
 } else if (time >= "11:00:00" && time < "15:00:00") {
-ucapanWaktu = "🏞️ Selamat Siang"
+ucapanWaktu = "🏞️ Good Afternoon"
 } else if (time >= "06:00:00" && time < "11:00:00") {
-ucapanWaktu = "🏙️ Selamat Pagi"
+ucapanWaktu = "🏙️ Hello bih"
 } else {
 ucapanWaktu = "🌆 Selamat Subuh"
 }
-const wib = moment(Date.now()).tz("Asia/Jakarta").locale("id").format("HH:mm:ss z")
-const wita = moment(Date.now()).tz("Asia/Makassar").locale("id").format("HH:mm:ss z")
-const wit = moment(Date.now()).tz("Asia/Jayapura").locale("id").format("HH:mm:ss z")
-const salam = moment(Date.now()).tz("Asia/Jakarta").locale("id").format("a")
+const wib = moment(Date.now()).tz("Africa/Nairobi").locale("id").format("HH:mm:ss z")
+const wita = moment(Date.now()).tz("Africa/Nairobi").locale("id").format("HH:mm:ss z")
+const wit = moment(Date.now()).tz("Africa/Nairobi").locale("id").format("HH:mm:ss z")
+const salam = moment(Date.now()).tz("Africa/Nairobi").locale("id").format("a")
 let d = new Date
 let gmt = new Date(0).getTime() - new Date("1 Januari 2024").getTime()
 let weton = ["Pahing", "Pon","Wage","Kliwon","Legi"][Math.floor(((d * 1) + gmt) / 84600000) % 5]
@@ -718,7 +718,7 @@ remoteJid: ""
 'message': {
   "eventMessage": {
     "isCanceled": false,
-    "name": "🌠 ZxV Client - Multi Device",
+    "name": "🌠 ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ - 𝐁𝐘 𝐃𝐑𝐄𝐗",
     "description": "Pe",
     "location": {
       "degreesLatitude": 0,
@@ -819,7 +819,7 @@ newsletterAdminInviteMessage: {
 newsletterJid: `120363224727390375@newsletter`,
 newsletterName: `🔥`,
 jpegThumbnail: fakejpg,
-caption: ` ZxV - Bug ? \n ⿻ ${m.body || m.mtype} `,
+caption: ` ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ ? \n ⿻ ${m.body || m.mtype} `,
 inviteExpiration: Date.now() + 1814400000
 }
 }
@@ -893,7 +893,7 @@ remoteJid: "status@broadcast"
 message: {
 "extendedTextMessage": {
 "text": `🖥️༐✲ 𝐌𝐬𝐠 𒑊 ${m.body || m.mtype}`,
-"title": `▾ 𝐙͢𝐱𝐕 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 ▾`,
+"title": `⟠ 𝐃𝐑𝚺𝐗 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 々`,
 'jpegThumbnail': fakejpg,
 }
 }
@@ -915,7 +915,7 @@ message: {
 "jpegThumbnail": fakejpg,
 },
 "title": `🖥️༐✲ 𝐌𝐬𝐠 𒑊 ${m.body || m.mtype}`,
-"description": `▾ 𝐙͢𝐱𝐕 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 ▾`,
+"description": `⟠ 𝐃𝐑𝚺𝐗 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 々`,
 "currencyCode": "IDR",
 "priceAmount1000": "1000000000000000000",
 "retailerId": `🖥️༐✲ 𝐌𝐬𝐠 𒑊 ${m.body || m.mtype}`,
@@ -1038,9 +1038,9 @@ return ryozingod.sendMessage(m.chat, {
 contextInfo: {
 mentionedJid: [m.sender],
 externalAdReply: {
-showAdAttribution: false,
+showAdAttribution: true,
 renderLargerThumbnail: false,
-title: `© 𝖹𝗑𝖵 𝖢𝗅𝗂𝖾𝗇𝗍 5.0.0`,
+title: `⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ - 𝐁𝐘 𝐃𝐑𝐄𝐗`,
 body: `${ucapanWaktu} ${m.pushName} 👋`,
 previewType: "VIDEO",
 thumbnail: nulll,
@@ -2148,7 +2148,7 @@ interactiveMessage: {
 "sections": [
 {
 "title": "👾 Choose One Of Them ⭐",
-"highlight_label": "#General",
+"highlight_label": "#ALL COMMANDS BY DREX CLIENT 👺",
 "rows": [
 {
 "header": "[ ❇️ ] • ALL CMD",
@@ -2169,7 +2169,7 @@ interactiveMessage: {
 },
 {
 "title": "🍷 SUPERIOR COMMAND ♦️",
-"highlight_label": "#FRONT",
+"highlight_label": "BUG COMMANDS BY DREX CLIENT 🪲",
 "rows": [
 {
 "header": "🎩 - BUG MENU ‼️",
@@ -2221,11 +2221,11 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "*# Zero Execution Vault - 2k24*"
+"text": "*# ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ - 𝐁𝐘 𝐃𝐑𝐄𝐗*"
 },
 "nativeFlowMessage": {
 "buttons": [
-{ "name": "cta_url", "buttonParamsJson": `{ display_text : '🎩 𝐙𝐞𝐫𝐨 𝐗𝐯❗', url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4", merchant_url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4" }`}
+{ "name": "cta_url", "buttonParamsJson": `{ display_text : '🎩 ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻❗', url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4", merchant_url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4" }`}
 ],
 "messageParamsJson": ""
 }
@@ -2245,9 +2245,9 @@ break
 //=================================================//
 case "allmenu": case "allcmd": {
 let itsmenu = `
-  *[ 🎩 ]  •  𝐙𝐱͢𝐕 - 𝐂𝐋𝐢͢𝐄𝐍𝐓 🦠*
+   *[ 🎩 ]  •  ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ 🦠*
 
-⭔ Creator : thezetsuboxygen
+⭔ Creator : ⟠ 𝐃𝐑𝚺𝐗 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 々
 ⭔ Library : WS-Baileys
 ⭔ Type : Case
 ⭔ Status : Ready
@@ -2691,13 +2691,13 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "*# Zero Execution Vault - 2k24*"
+"text": "*# ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ - 𝐁𝐘 𝐃𝐑𝐄𝐗*"
 },
 "nativeFlowMessage": {
 "buttons": [
 {
 "name": "quick_reply",
-"buttonParamsJson": "{\"display_text\":\"⿻𝐙͢𝐱𝐕⿻\nAKU SUKA AMA LOBANG BOOL KAMU, AYO NGEGAY😋😘\",\"id\":\".terkentod\"}"
+"buttonParamsJson": "{\"display_text\":\"⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻\nAKU SUKA AMA LOBANG BOOL KAMU, AYO NGEGAY😋😘\",\"id\":\".terkentod\"}"
 }
 ],
 "messageParamsJson": ""
@@ -2717,7 +2717,7 @@ interactiveMessage: {
 "isForwarded": true,
 "forwardedNewsletterMessageInfo": {
 "newsletterJid": '0@newsletter',
-"newsletterName": 'By Zero Execution Vault',
+"newsletterName": '⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ - 𝐁𝐘 𝐃𝐑𝐄𝐗',
 "serverMessageId": 1
 },
 },
@@ -2730,11 +2730,11 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "*# Zero Execution Vault - 2k24*"
+"text": "*# ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ - 𝐁𝐘 𝐃𝐑𝐄𝐗*"
 },
 "nativeFlowMessage": {
 "buttons": [
-{ "name": "cta_url", "buttonParamsJson": `{ display_text : '🎩 𝐙𝐞𝐫𝐨 𝐗𝐯❗', url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4", merchant_url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4" }`}
+{ "name": "cta_url", "buttonParamsJson": `{ display_text : '🎩 ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻❗', url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4", merchant_url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4" }`}
 ],
 "messageParamsJson": ""
 }
@@ -2753,9 +2753,9 @@ break
 //=================================================//
 case "bugmenu": {
 let itsmenu = `
-  *[ 🎩 ]  •  𝐙𝐱͢𝐕 - 𝐂𝐋𝐢͢𝐄𝐍𝐓 🦠*
+    *[ 🎩 ]  •  ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ 🦠*
 
-⭔ Creator : thezetsuboxygen
+⭔ Creator : ⟠ 𝐃𝐑𝚺𝐗 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 々
 ⭔ Library : WS-Baileys
 ⭔ Type : Case
 ⭔ Status : Ready
@@ -2823,13 +2823,13 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "*# Zero Execution Vault - 2k24*"
+"text": "*# ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ - 𝐁𝐘 𝐃𝐑𝐄𝐗*"
 },
 "nativeFlowMessage": {
 "buttons": [
 {
 "name": "quick_reply",
-"buttonParamsJson": "{\"display_text\":\"⿻𝐙͢𝐱𝐕⿻\nAKU SUKA AMA LOBANG BOOL KAMU, AYO NGEGAY😋😘\",\"id\":\".terkentod\"}"
+"buttonParamsJson": "{\"display_text\":\"⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻\nAKU SUKA AMA LOBANG BOOL KAMU, AYO NGEGAY😋😘\",\"id\":\".terkentod\"}"
 }
 ],
 "messageParamsJson": ""
@@ -2849,7 +2849,7 @@ interactiveMessage: {
 "isForwarded": true,
 "forwardedNewsletterMessageInfo": {
 "newsletterJid": '0@newsletter',
-"newsletterName": 'By Zero Execution Vault',
+"newsletterName": '⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ - 𝐁𝐘 𝐃𝐑𝐄𝐗',
 "serverMessageId": 1
 },
 },
@@ -2862,11 +2862,11 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "*# Zero Execution Vault - 2k24*"
+"text": "*# ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ - 𝐁𝐘 𝐃𝐑𝐄𝐗*"
 },
 "nativeFlowMessage": {
 "buttons": [
-{ "name": "cta_url", "buttonParamsJson": `{ display_text : '🎩 𝐙𝐞𝐫𝐨 𝐗𝐯❗', url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4", merchant_url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4" }`}
+{ "name": "cta_url", "buttonParamsJson": `{ display_text : '🎩 ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻❗', url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4", merchant_url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4" }`}
 ],
 "messageParamsJson": ""
 }
@@ -2885,9 +2885,9 @@ break
 //=================================================//
 case "ddosmenu": {
 let itsmenu = `
-  *[ 🎩 ]  •  𝐙𝐱͢𝐕 - 𝐂𝐋𝐢͢𝐄𝐍𝐓 🦠*
+    *[ 🎩 ]  •  ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ 🦠*
 
-⭔ Creator : thezetsuboxygen
+⭔ Creator : ⟠ 𝐃𝐑𝚺𝐗 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 々
 ⭔ Library : WS-Baileys
 ⭔ Type : Case
 ⭔ Status : Ready
@@ -2934,13 +2934,13 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "*# Zero Execution Vault - 2k24*"
+"text": "*# ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ - 𝐁𝐘 𝐃𝐑𝐄𝐗*"
 },
 "nativeFlowMessage": {
 "buttons": [
 {
 "name": "quick_reply",
-"buttonParamsJson": "{\"display_text\":\"⿻𝐙͢𝐱𝐕⿻\nAKU SUKA AMA LOBANG BOOL KAMU, AYO NGEGAY😋😘\",\"id\":\".terkentod\"}"
+"buttonParamsJson": "{\"display_text\":\"⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻\nAKU SUKA AMA LOBANG BOOL KAMU, AYO NGEGAY😋😘\",\"id\":\".terkentod\"}"
 }
 ],
 "messageParamsJson": ""
@@ -2959,7 +2959,7 @@ interactiveMessage: {
 "isForwarded": true,
 "forwardedNewsletterMessageInfo": {
 "newsletterJid": '0@newsletter',
-"newsletterName": 'By Zero Execution Vault',
+"newsletterName": '⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ - 𝐁𝐘 𝐃𝐑𝐄𝐗',
 "serverMessageId": 1
 },
 },
@@ -2972,11 +2972,11 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "*# Zero Execution Vault - 2k24*"
+"text": "*# ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ - 𝐁𝐘 𝐃𝐑𝐄𝐗*"
 },
 "nativeFlowMessage": {
 "buttons": [
-{ "name": "cta_url", "buttonParamsJson": `{ display_text : '🎩 𝐙𝐞𝐫𝐨 𝐗𝐯❗', url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4", merchant_url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4" }`}
+{ "name": "cta_url", "buttonParamsJson": `{ display_text : '🎩 ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻❗', url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4", merchant_url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4" }`}
 ],
 "messageParamsJson": ""
 }
@@ -3007,8 +3007,9 @@ let totalCases = caseCount,
 listCases = caseNames.join('\n⭔ ');
 
 joreply(`
-╭❐  ⌜ ZxV - Bot ⌟  ❐
-│⭔ Creator : thezetsuboxygen
+  *[ 🎩 ]  •  ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ 🦠*
+
+⭔ Creator : ⟠ 𝐃𝐑𝚺𝐗 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 々
 │⭔ Library : WS-Baileys
 │⭔ Type : Case
 │⭔ Status : Maintenance 
@@ -3034,21 +3035,21 @@ joreply(jsonData)
 break
 //=================================================//
 case 'sc': case 'script': {
-joreply(`🌤️Sc Ini Dibuat Oleh TheZetsuboXygen (ryo).
+joreply(`🌤️Sc Unavailable. Contact owner
 
 ❕Yt : ${global.url}
-❗Tl : t.me/thezetsuboxygen
+❗Tl : t.me/drexclient
 
 `)
 }
 break
 //=================================================//
 case 'owner': case 'botowner':
-let namaown = `Owner Cakep`
+let namaown = `⟠ 𝐃𝐑𝚺𝐗 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 々`
 var contact = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "contactMessage": {
 "displayName": `${namaown}`,
-"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:;;;;\nFN:${namaown}\nitem1.TEL;waid=${global.ownMain}:+${global.ownMain}\nitem1.X-ABLabel:Ponsel\nX-WA-BIZ-DESCRIPTION:[[ ༑ 𝐙.𝐱.𝐕 ⿻ 𝐏𝐔𝐁𝐋𝐢𝐂 ༑ ]]\nX-WA-BIZ-NAME: [[ ༑ 𝐙.𝐱.𝐕 ⿻ 𝐏𝐔𝐁𝐋𝐢𝐂 ༑ ]]\nEND:VCARD`,
+"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:;;;;\nFN:${namaown}\nitem1.TEL;waid=${global.ownMain}:+${global.ownMain}\nitem1.X-ABLabel:Ponsel\nX-WA-BIZ-DESCRIPTION:[[ ༑ ⟠ 𝐃𝐑𝚺𝐗 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 々 ༑ ]]\nX-WA-BIZ-NAME: [[ ༑ ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ ༑ ]]\nEND:VCARD`,
 }
 }), { userJid: m.chat, quoted: m })
 ryozingod.relayMessage(m.chat, contact.message, { messageId: contact.key.id })
