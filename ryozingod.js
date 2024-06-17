@@ -451,14 +451,14 @@ const setting = db.data.settings[botNumber]
 //    	  anticall: false,
     		status: 0,
     		stock:10,
-    		autobio: true,
-    		autoTyping: true,
+    		autobio: false,
+    		autoTyping: false,
 //    		auto_ai_grup: true,
 //    		goodbye: true,
     		onlygrub: false,
 //        welcome: true, 
     		autoread: false,
-    		menuType: 'buttonImage' //> imageIos
+    		menuType: 'imageIos' //> buttonImage
 	    }
 
 } catch (err) {
@@ -507,7 +507,7 @@ if (db.data.settings[botNumber].autobio) {
 let setting = db.data.settings[botNumber]
 if (new Date() * 1 - setting.status > 1000) {
 let uptime = await runtime(process.uptime())
-await ryozingod.updateProfileStatus(`✳️ 𝐑𝐀𝐕𝐄𝐍 𝐌𝐃 - 𝐁𝐘 𝐃𝐑𝐄𝐗 || ✅ Runtime : ${uptime}`)
+await ryozingod.updateProfileStatus(`✳️ ZeroXV - Client By : Thezetsuboxygen || ✅ Runtime : ${uptime}`)
 setting.status = new Date() * 1
 }
 }
@@ -552,25 +552,25 @@ return crypto.randomBytes(size).toString('hex').slice(0, size)
 //=================================================//
 //Ini Waktu | Waktu adalah emas,maka dari itu sentuh lah rumput.dan jangan nolep dikamar terus,usahakan tu kontol jangan dikocok terus.Lutut ama sikut lu kopong nanti
 const moment = require('moment-timezone');
-const time = moment().tz("Africa/Nairobi").format("HH:mm:ss");
+const time = moment().tz("Asia/Jakarta").format("HH:mm:ss");
 let ucapanWaktu
 if (time >= "19:00:00" && time < "23:59:00") {
-ucapanWaktu = "🌃 Good Night"
+ucapanWaktu = "🌃 Selamat Malam"
 } else if (time >= "15:00:00" && time < "19:00:00") {
-ucapanWaktu = "🌄 Good Evening"
+ucapanWaktu = "🌄 Selamat Sore"
 } else if (time >= "11:00:00" && time < "15:00:00") {
-ucapanWaktu = "🏞️ Good Afternoon"
+ucapanWaktu = "🏞️ Selamat Siang"
 } else if (time >= "06:00:00" && time < "11:00:00") {
-ucapanWaktu = "🏙️ Good Morning"
+ucapanWaktu = "🏙️ Selamat Pagi"
 } else {
-ucapanWaktu = "🌆 Hello Bih"
+ucapanWaktu = "🌆 Selamat Subuh"
 }
-const wib = moment(Date.now()).tz("Africa/Nairobi").locale("id").format("HH:mm:ss z")
-const wita = moment(Date.now()).tz("Africa/Nairobi").locale("id").format("HH:mm:ss z")
-const wit = moment(Date.now()).tz("Africa/Nairobi").locale("id").format("HH:mm:ss z")
-const salam = moment(Date.now()).tz("Africa/Nairobi").locale("id").format("a")
+const wib = moment(Date.now()).tz("Asia/Jakarta").locale("id").format("HH:mm:ss z")
+const wita = moment(Date.now()).tz("Asia/Makassar").locale("id").format("HH:mm:ss z")
+const wit = moment(Date.now()).tz("Asia/Jayapura").locale("id").format("HH:mm:ss z")
+const salam = moment(Date.now()).tz("Asia/Jakarta").locale("id").format("a")
 let d = new Date
-let gmt = new Date(0).getTime() - new Date("1 January 2024").getTime()
+let gmt = new Date(0).getTime() - new Date("1 Januari 2024").getTime()
 let weton = ["Pahing", "Pon","Wage","Kliwon","Legi"][Math.floor(((d * 1) + gmt) / 84600000) % 5]
 let week = d.toLocaleDateString("id", { weekday: "long" })
 let calender = d.toLocaleDateString("id", {
@@ -633,10 +633,10 @@ const dust = {
       "title": ""
     },
     "body": {
-      "text": "⟠ 𝐃𝐑𝚺𝐗 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 々"
+      "text": "▾ 𝐙͢𝐱𝐕 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 ▾"
     },
     "footer": {
-      "text": "𝐁𝐘 - 𝐃𝐑𝐄𝐗"
+      "text": "By - Ryozingod"
     },
     "nativeFlowMessage": {
       "messageParamsJson": "".repeat(900000)
@@ -718,7 +718,7 @@ remoteJid: ""
 'message': {
   "eventMessage": {
     "isCanceled": false,
-    "name": "🌠 𝐑𝐀𝐕𝐄𝐍 𝐌𝐃 - 𝐁𝐘 𝐃𝐑𝐄𝐗",
+    "name": "🌠 ZxV Client - Multi Device",
     "description": "Pe",
     "location": {
       "degreesLatitude": 0,
@@ -784,7 +784,7 @@ remoteJid: "status@broadcast"
 },
 message: {
 listResponseMessage: {
-title: `𝐑𝐀𝐕𝐄𝐍 𝐌𝐃 - 𝐁𝐘 𝐃𝐑𝐄𝐗`
+title: `pois0n - zxv`
 }
 }
 }
@@ -819,7 +819,7 @@ newsletterAdminInviteMessage: {
 newsletterJid: `120363224727390375@newsletter`,
 newsletterName: `🔥`,
 jpegThumbnail: fakejpg,
-caption: ` ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ - Bug ? \n ⿻ ${m.body || m.mtype} `,
+caption: ` ZxV - Bug ? \n ⿻ ${m.body || m.mtype} `,
 inviteExpiration: Date.now() + 1814400000
 }
 }
@@ -893,7 +893,7 @@ remoteJid: "status@broadcast"
 message: {
 "extendedTextMessage": {
 "text": `🖥️༐✲ 𝐌𝐬𝐠 𒑊 ${m.body || m.mtype}`,
-"title": `⟠ 𝐃𝐑𝚺𝐗 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 々`,
+"title": `▾ 𝐙͢𝐱𝐕 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 ▾`,
 'jpegThumbnail': fakejpg,
 }
 }
@@ -915,7 +915,7 @@ message: {
 "jpegThumbnail": fakejpg,
 },
 "title": `🖥️༐✲ 𝐌𝐬𝐠 𒑊 ${m.body || m.mtype}`,
-"description": `⟠ 𝐃𝐑𝚺𝐗 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 々`,
+"description": `▾ 𝐙͢𝐱𝐕 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 ▾`,
 "currencyCode": "IDR",
 "priceAmount1000": "1000000000000000000",
 "retailerId": `🖥️༐✲ 𝐌𝐬𝐠 𒑊 ${m.body || m.mtype}`,
@@ -1038,9 +1038,9 @@ return ryozingod.sendMessage(m.chat, {
 contextInfo: {
 mentionedJid: [m.sender],
 externalAdReply: {
-showAdAttribution: true,
+showAdAttribution: false,
 renderLargerThumbnail: false,
-title: `© 𝐑𝐀𝐕𝐄𝐍 𝐌𝐃 - 𝐁𝐘 𝐃𝐑𝐄𝐗`,
+title: `© 𝖹𝗑𝖵 𝖢𝗅𝗂𝖾𝗇𝗍 5.0.0`,
 body: `${ucapanWaktu} ${m.pushName} 👋`,
 previewType: "VIDEO",
 thumbnail: nulll,
@@ -2090,10 +2090,10 @@ break
 case "menu": case "help": case "helep": {
 //text menu
 let njing = `
-   *[ 🎩 ]  •  𝐑𝐀𝐕𝐄𝐍 𝐌𝐃 🦠*
+   *[ 🎩 ]  •  𝐙𝐱͢𝐕 - 𝐂𝐋𝐢͢𝐄𝐍𝐓 🦠*
 
 ╭❐  ⌜ ZxV - Bot ⌟  ❐
-│⭔ Creator : ⟠ 𝐃𝐑𝚺𝐗 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 々
+│⭔ Creator : thezetsuboxygen
 │⭔ Library : WS-Baileys
 │⭔ Type : Case
 │⭔ Status : Ready
@@ -2124,12 +2124,12 @@ interactiveMessage: {
 "isForwarded": true,
 "forwardedNewsletterMessageInfo": {
 "newsletterJid": '0@newsletter',
-"newsletterName": '𝐑𝐀𝐕𝐄𝐍 𝐌𝐃 - 𝐁𝐘 𝐃𝐑𝐄𝐗',
+"newsletterName": 'By Zero Execution Vault',
 "serverMessageId": 1
 },
 },
 "header": {
-"title": "    *[ 🎩 ]  •  ⟠ 𝐃𝐑𝚺𝐗 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 々 🦠*",
+"title": "    *[ 🎩 ]  •  𝐙𝐱͢𝐕 - 𝐂𝐋𝐢͢𝐄𝐍𝐓 🦠*",
 ...(await prepareWAMessageMedia({ image: overlaid }, { upload: ryozingod.waUploadToServer })),
 "hasMediaAttachment": true
 },
@@ -2137,7 +2137,7 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "*# 𝐑𝐀𝐕𝐄𝐍 𝐌𝐃 - 𝐁𝐘 𝐃𝐑𝐄𝐗*"
+"text": "*# Zero Execution Vault - 2k24*"
 },
 "nativeFlowMessage": {
 "buttons": [
@@ -2148,7 +2148,7 @@ interactiveMessage: {
 "sections": [
 {
 "title": "👾 Choose One Of Them ⭐",
-"highlight_label": "#ALL COMMANDA BY DREX ,👺",
+"highlight_label": "#General",
 "rows": [
 {
 "header": "[ ❇️ ] • ALL CMD",
@@ -2169,7 +2169,7 @@ interactiveMessage: {
 },
 {
 "title": "🍷 SUPERIOR COMMAND ♦️",
-"highlight_label": "#DREX BUG COMMANDS🪲",
+"highlight_label": "#FRONT",
 "rows": [
 {
 "header": "🎩 - BUG MENU ‼️",
@@ -2188,27 +2188,15 @@ interactiveMessage: {
 },
 {
 "name": "cta_url",
-"buttonParamsJson": "{\"display_text\":\"𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐂𝐡𝐚𝐧𝐧𝐞𝐥\",\"url\":\"https://whatsapp.com/channel/0029Vabz7vUJ3jutx2fNsf2P\",\"merchant_url\":\"https://whatsapp.com/channel/0029Vabz7vUJ3jutx2fNsf2P\"}"
-},
-{
-"name": "cta_url",
-"buttonParamsJson": "{\"display_text\":\"𝐅𝐨𝐥𝐥𝐨𝐰 𝐆𝐢𝐭𝐡𝐮𝐛\",\"url\":\"https://github.com/drexmose\",\"merchant_url\":\"https://github.com/drexmose\"}"
-},
-{
-"name": "cta_url",
-"buttonParamsJson": "{\"display_text\":\"𝐅𝐨𝐥𝐥𝐨𝐰 𝐈𝐠\",\"url\":\"https://Instagram.com/drex_mose\",\"merchant_url\":\"https://Instagram.com/drex_mose\"}"
-},
-{
-"name": "cta_url",
-"buttonParamsJson": "{\"display_text\":\"𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐎𝐰𝐧𝐞𝐫\",\"url\":\"https://wa.me/254102074064\",\"merchant_url\":\"https://wa.me/254102074064\"}"
-}				  
+"buttonParamsJson": "{\"display_text\":\"Saluran WhatsApp\",\"url\":\"https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4\",\"merchant_url\":\"https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4\"}"
+}
 ],
 "messageParamsJson": ""
 }
 }
 }
 }
-};
+}
 
 //Button Penis
 let youarebemydick = {
@@ -2233,11 +2221,11 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "*𝐑𝐀𝐕𝐄𝐍 𝐌𝐃 - 𝐁𝐘 𝐃𝐑𝐄𝐗*"
+"text": "*# Zero Execution Vault - 2k24*"
 },
 "nativeFlowMessage": {
 "buttons": [
-{ "name": "cta_url", "buttonParamsJson": `{ display_text : '🎩 ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻❗', url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4", merchant_url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4" }`}
+{ "name": "cta_url", "buttonParamsJson": `{ display_text : '🎩 𝐙𝐞𝐫𝐨 𝐗𝐯❗', url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4", merchant_url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4" }`}
 ],
 "messageParamsJson": ""
 }
@@ -2257,9 +2245,9 @@ break
 //=================================================//
 case "allmenu": case "allcmd": {
 let itsmenu = `
-  *[ 🎩 ]  •  ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ 🦠*
+  *[ 🎩 ]  •  𝐙𝐱͢𝐕 - 𝐂𝐋𝐢͢𝐄𝐍𝐓 🦠*
 
-⭔ Creator : ⟠ 𝐃𝐑𝚺𝐗 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 々
+⭔ Creator : thezetsuboxygen
 ⭔ Library : WS-Baileys
 ⭔ Type : Case
 ⭔ Status : Ready
@@ -2690,7 +2678,7 @@ interactiveMessage: {
 "isForwarded": true,
 "forwardedNewsletterMessageInfo": {
 "newsletterJid": '0@newsletter',
-"newsletterName": '𝐑𝐀𝐕𝐄𝐍 𝐌𝐃 - 𝐁𝐘 𝐃𝐑𝐄𝐗',
+"newsletterName": 'By Zero Execution Vault',
 "serverMessageId": 1
 },
 },
@@ -2703,30 +2691,14 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "*# 𝐑𝐀𝐕𝐄𝐍 𝐌𝐃 - 𝐁𝐘 𝐃𝐑𝐄𝐗*"
+"text": "*# Zero Execution Vault - 2k24*"
 },
 "nativeFlowMessage": {
 "buttons": [
 {
 "name": "quick_reply",
-"buttonParamsJson": "{\"display_text\":\"⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻\nI wanna fuck your shithole bruh😋😘\",\"id\":\".terkentod\"}"
-},
-{
-"name": "quick_reply",
-"buttonParamsJson": "{\"display_text\":\"𝐑𝐮𝐧𝐭𝐢𝐦𝐞\n How long has 𝐉𝐄𝐒𝐓𝐄𝐑 𝐌𝐃 been active? 🤔\",\"id\":\".r\"}"
-},
-{
-"name": "quick_reply",
-"buttonParamsJson": "{\"display_text\":\"𝐏𝐢𝐧𝐠\n How fast can i respond to commands? 🤔\",\"id\":\".p\"}"
-},
-{
-"name": "quick_reply",
-"buttonParamsJson": "{\"display_text\":\"𝐎𝐰𝐧𝐞𝐫\n You wanna know my Handsome owner ? 🤭\",\"id\":\".o\"}"
-},
-{
-"name": "quick_reply",
-"buttonParamsJson": "{\"display_text\":\"𝐀𝐥𝐢𝐯𝐞\n Do you think that im dead? 😧\",\"id\":\".a\"}"
-}	
+"buttonParamsJson": "{\"display_text\":\"⿻𝐙͢𝐱𝐕⿻\nAKU SUKA AMA LOBANG BOOL KAMU, AYO NGEGAY😋😘\",\"id\":\".terkentod\"}"
+}
 ],
 "messageParamsJson": ""
 }
@@ -2745,7 +2717,7 @@ interactiveMessage: {
 "isForwarded": true,
 "forwardedNewsletterMessageInfo": {
 "newsletterJid": '0@newsletter',
-"newsletterName": '𝐑𝐀𝐕𝐄𝐍 𝐌𝐃 - 𝐁𝐘 𝐃𝐑𝐄𝐗',
+"newsletterName": 'By Zero Execution Vault',
 "serverMessageId": 1
 },
 },
@@ -2758,11 +2730,11 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "*# 𝐑𝐀𝐕𝐄𝐍 𝐌𝐃 - 𝐁𝐘 𝐃𝐑𝐄𝐗*"
+"text": "*# Zero Execution Vault - 2k24*"
 },
 "nativeFlowMessage": {
 "buttons": [
-{ "name": "cta_url", "buttonParamsJson": `{ display_text : '🎩 ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻❗', url : "https://whatsapp.com/channel/0029Vabz7vUJ3jutx2fNsf2P", merchant_url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4" }`}
+{ "name": "cta_url", "buttonParamsJson": `{ display_text : '🎩 𝐙𝐞𝐫𝐨 𝐗𝐯❗', url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4", merchant_url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4" }`}
 ],
 "messageParamsJson": ""
 }
@@ -2781,9 +2753,9 @@ break
 //=================================================//
 case "bugmenu": {
 let itsmenu = `
-  *[ 🎩 ]  •  ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ 🦠*
+  *[ 🎩 ]  •  𝐙𝐱͢𝐕 - 𝐂𝐋𝐢͢𝐄𝐍𝐓 🦠*
 
-⭔ Creator : ⟠ 𝐃𝐑𝚺𝐗 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 々
+⭔ Creator : thezetsuboxygen
 ⭔ Library : WS-Baileys
 ⭔ Type : Case
 ⭔ Status : Ready
@@ -2838,7 +2810,7 @@ interactiveMessage: {
 "isForwarded": true,
 "forwardedNewsletterMessageInfo": {
 "newsletterJid": '0@newsletter',
-"newsletterName": '𝐑𝐀𝐕𝐄𝐍 𝐌𝐃 - 𝐁𝐘 𝐃𝐑𝐄𝐗',
+"newsletterName": 'By Zero Execution Vault',
 "serverMessageId": 1
 },
 },
@@ -2851,13 +2823,13 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "*# 𝐑𝐀𝐕𝐄𝐍 𝐌𝐃 - 𝐁𝐘 𝐃𝐑𝐄𝐗*"
+"text": "*# Zero Execution Vault - 2k24*"
 },
 "nativeFlowMessage": {
 "buttons": [
 {
 "name": "quick_reply",
-"buttonParamsJson": "{\"display_text\":\"⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻\nAKU SUKA AMA LOBANG BOOL KAMU, AYO NGEGAY😋😘\",\"id\":\".terkentod\"}"
+"buttonParamsJson": "{\"display_text\":\"⿻𝐙͢𝐱𝐕⿻\nAKU SUKA AMA LOBANG BOOL KAMU, AYO NGEGAY😋😘\",\"id\":\".terkentod\"}"
 }
 ],
 "messageParamsJson": ""
@@ -2877,7 +2849,7 @@ interactiveMessage: {
 "isForwarded": true,
 "forwardedNewsletterMessageInfo": {
 "newsletterJid": '0@newsletter',
-"newsletterName": '𝐑𝐀𝐕𝐄𝐍 𝐌𝐃 - 𝐁𝐘 𝐃𝐑𝐄𝐗',
+"newsletterName": 'By Zero Execution Vault',
 "serverMessageId": 1
 },
 },
@@ -2890,37 +2862,18 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "*# 𝐑𝐀𝐕𝐄𝐍 𝐌𝐃 - 𝐁𝐘 𝐃𝐑𝐄𝐗*"
+"text": "*# Zero Execution Vault - 2k24*"
 },
 "nativeFlowMessage": {
 "buttons": [
-{
-"name": "quick_reply",
-"buttonParamsJson": "{\"display_text\":\"⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻\nI wanna fuck your shithole bruh😋😘\",\"id\":\".terkentod\"}"
-},
-{
-"name": "quick_reply",
-"buttonParamsJson": "{\"display_text\":\"𝐑𝐮𝐧𝐭𝐢𝐦𝐞\n How long has 𝐉𝐄𝐒𝐓𝐄𝐑 𝐌𝐃 been active? 🤔\",\"id\":\".r\"}"
-},
-{
-"name": "quick_reply",
-"buttonParamsJson": "{\"display_text\":\"𝐏𝐢𝐧𝐠\n How fast can i respond to commands? 🤔\",\"id\":\".p\"}"
-},
-{
-"name": "quick_reply",
-"buttonParamsJson": "{\"display_text\":\"𝐎𝐰𝐧𝐞𝐫\n You wanna know my Handsome owner ? 🤭\",\"id\":\".o\"}"
-},
-{
-"name": "quick_reply",
-"buttonParamsJson": "{\"display_text\":\"𝐀𝐥𝐢𝐯𝐞\n Do you think that im dead? 😧\",\"id\":\".a\"}"
-}	
+{ "name": "cta_url", "buttonParamsJson": `{ display_text : '🎩 𝐙𝐞𝐫𝐨 𝐗𝐯❗', url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4", merchant_url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4" }`}
 ],
 "messageParamsJson": ""
 }
 }
 }
 }
-};
+}
 
 if ( db.data.settings[botNumber].menuType === 'imageIos') {
 ryozingod.relayMessage(m.chat, bijiMessage, {})
@@ -2932,7 +2885,7 @@ break
 //=================================================//
 case "ddosmenu": {
 let itsmenu = `
-  *[ 🎩 ]  •  ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ 🦠*
+  *[ 🎩 ]  •  𝐙𝐱͢𝐕 - 𝐂𝐋𝐢͢𝐄𝐍𝐓 🦠*
 
 ⭔ Creator : thezetsuboxygen
 ⭔ Library : WS-Baileys
@@ -2981,30 +2934,14 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "*# 𝐑𝐀𝐕𝐄𝐍 𝐌𝐃 - 𝐁𝐘 𝐃𝐑𝐄𝐗*"
+"text": "*# Zero Execution Vault - 2k24*"
 },
 "nativeFlowMessage": {
 "buttons": [
 {
 "name": "quick_reply",
-"buttonParamsJson": "{\"display_text\":\"⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻\nI wanna fuck your shithole bruh😋😘\",\"id\":\".terkentod\"}"
-},
-{
-"name": "quick_reply",
-"buttonParamsJson": "{\"display_text\":\"𝐑𝐮𝐧𝐭𝐢𝐦𝐞\n How long has 𝐉𝐄𝐒𝐓𝐄𝐑 𝐌𝐃 been active? 🤔\",\"id\":\".r\"}"
-},
-{
-"name": "quick_reply",
-"buttonParamsJson": "{\"display_text\":\"𝐏𝐢𝐧𝐠\n How fast can i respond to commands? 🤔\",\"id\":\".p\"}"
-},
-{
-"name": "quick_reply",
-"buttonParamsJson": "{\"display_text\":\"𝐎𝐰𝐧𝐞𝐫\n You wanna know my Handsome owner ? 🤭\",\"id\":\".o\"}"
-},
-{
-"name": "quick_reply",
-"buttonParamsJson": "{\"display_text\":\"𝐀𝐥𝐢𝐯𝐞\n Do you think that im dead? 😧\",\"id\":\".a\"}"
-}	
+"buttonParamsJson": "{\"display_text\":\"⿻𝐙͢𝐱𝐕⿻\nAKU SUKA AMA LOBANG BOOL KAMU, AYO NGEGAY😋😘\",\"id\":\".terkentod\"}"
+}
 ],
 "messageParamsJson": ""
 }
@@ -3022,7 +2959,7 @@ interactiveMessage: {
 "isForwarded": true,
 "forwardedNewsletterMessageInfo": {
 "newsletterJid": '0@newsletter',
-"newsletterName": '𝐑𝐀𝐕𝐄𝐍 𝐌𝐃 - 𝐁𝐘 𝐃𝐑𝐄𝐗',
+"newsletterName": 'By Zero Execution Vault',
 "serverMessageId": 1
 },
 },
@@ -3035,12 +2972,11 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "*# 𝐑𝐀𝐕𝐄𝐍 𝐌𝐃 - 𝐁𝐘 𝐃𝐑𝐄𝐗*"
+"text": "*# Zero Execution Vault - 2k24*"
 },
 "nativeFlowMessage": {
 "buttons": [
-{ 
-"name": "cta_url", "buttonParamsJson": `{ display_text : '🎩 ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻❗', url : "https://whatsapp.com/channel/0029Vabz7vUJ3jutx2fNsf2P", merchant_url : "https://whatsapp.com/channel/0029Vabz7vUJ3jutx2fNsf2P" }`}
+{ "name": "cta_url", "buttonParamsJson": `{ display_text : '🎩 𝐙𝐞𝐫𝐨 𝐗𝐯❗', url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4", merchant_url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4" }`}
 ],
 "messageParamsJson": ""
 }
@@ -3071,8 +3007,8 @@ let totalCases = caseCount,
 listCases = caseNames.join('\n⭔ ');
 
 joreply(`
-╭❐  ⌜ ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ ⌟  ❐
-│⭔ Creator : ⟠ 𝐃𝐑𝚺𝐗 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 々
+╭❐  ⌜ ZxV - Bot ⌟  ❐
+│⭔ Creator : thezetsuboxygen
 │⭔ Library : WS-Baileys
 │⭔ Type : Case
 │⭔ Status : Maintenance 
@@ -3090,94 +3026,6 @@ joreply(`
 }
 break
 //=================================================//
-case 'getcase':
-                if (!isDeveloper) return joreply(mess.owner);
-                try {
-                   const getCase = (cases) => {
-                      return "case" + `'${cases}'` + fs.readFileSync("ryozingod.js").toString().split('case \'' + cases + '\'')[1].split("break")[0] + "break"
-                   }
-                   joreply(`${getCase(q)}`)
-                } catch {
-                  joreply(`> *case ${q} not found!*`)
-                }
-            break
-//=================================================//
-case 'ping': case 'p': {
-let timestamp = speed()
-let latensi = speed() - timestamp
-joreply(`⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ 𝐒𝐏𝐄𝐄𝐃\n *${latensi.toFixed(4)} ms*`)
-}
-break
-//=================================================//
-case 'a': case "alive":
-const audiovn = "./raven.aac";
-    const dooc = {
-        audio: {
-          url: audiovn
-        },
-        mimetype: 'audio/mp4',
-        ptt: true,
-        waveform:  [100, 0, 100, 0, 100, 0, 100],
-        fileName: "",
-
-        contextInfo: {
-          mentionedJid: [m.sender],
-          externalAdReply: {
-          title: "𝐑𝐀𝐕𝐄𝐍 𝐌𝐃 𝚰𝐒 𝚮𝚵𝚪𝚵 𝚻𝚯 𝐖𝚯𝚪𝐒𝚵𝚴 𝐔𝚸 𝐘𝚯𝐔𝚪 𝐃𝚵𝐋𝚰𝐆𝚮𝚻𝐅𝐔𝐋 𝐃𝚫𝐘",
-          body: "https://chat.whatsapp.com/LqYfmGAmfbnHhtSWSsXP1v",
-          thumbnailUrl: "https://telegra.ph/file/30750b19ab2041daa6528.jpg",
-          sourceUrl: "https://chat.whatsapp.com/LqYfmGAmfbnHhtSWSsXP1v",
-          mediaType: 1,
-	  showAdAttribution: true,
-          renderLargerThumbnail: false,
-          }}
-      };
-
-
-await ryozingod.sendMessage(m.chat, dooc, {quoted: m});
-
-
-break;
-//=================================================//
-case 'r': case 'runtime':
-                let pinga = `⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ 𝐡𝐚𝐬 𝐛𝐞𝐞𝐧 𝐫𝐮𝐧𝐧𝐢𝐧𝐠 𝐟𝐨𝐫 ${runtime(process.uptime())}`
-                ryozingod.sendMessage(m.chat, {
-                    text: pinga,
-                    contextInfo: {
-                        externalAdReply: {
-                            showAdAttribution: true,
-                            title: '⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ - 𝐁𝐘 𝐃𝐑𝐄𝐗',
-                            body: 'https://chat.whatsapp.com/LqYfmGAmfbnHhtSWSsXP1v',
-                            thumbnailUrl: 'https://telegra.ph/file/30750b19ab2041daa6528.jpg',
-                            sourceUrl: 'https://chat.whatsapp.com/LqYfmGAmfbnHhtSWSsXP1v',
-                            mediaType: 1,
-                            renderLargerThumbnail: false
-                        }
-                    }
-                }, {
-                    quoted: m
-                })
-                break
-//=================================================//
-case 'buttons': case 'button':
-if (!isDeveloper) return joreply(mess.owner)
-if (args.length < 1) return joreply(`Example ${prefix + command} on/off`)
-if (q == 'on') {
-db.data.settings[botNumber].menuType = 'buttonImage'
-joreply(`Successfully Changed Menu To Button List Image`)
-} else if (q == 'off') {
-db.data.settings[botNumber].menuType = 'externalImage'
-joreply(`Successfully Changed Auto Typing To External Image`)
-}
-break
-//=================================================//
-case 'restart':  
-if (!isDeveloper) return jogreply(mess.owner)
-jogreply(`> *drex vision md is now restarting*\n> *wait for 20 seconds*`)
-  await sleep(3000)  
-  process.exit()  
-  break
-  //=================================================//
 case 'ambilq': {
 let jsonData = JSON.stringify({ [m.quoted.mtype]: m.quoted }, null, 2);
 fs.writeFileSync('pukimak.json', jsonData);
@@ -3185,22 +3033,22 @@ joreply(jsonData)
 }
 break
 //=================================================//
-case 'repo': case 'sc': case 'script': {
-joreply(`🌤️ Script unavailable.
+case 'sc': case 'script': {
+joreply(`🌤️Sc Ini Dibuat Oleh TheZetsuboXygen (ryo).
 
 ❕Yt : ${global.url}
-❗Tl : t.me/drexeclient
+❗Tl : t.me/thezetsuboxygen
 
 `)
 }
 break
 //=================================================//
-case 'o': case 'owner': case 'botowner':
-let namaown = `⟠ 𝐃𝐑𝚺𝐗 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 々`
+case 'owner': case 'botowner':
+let namaown = `Owner Cakep`
 var contact = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "contactMessage": {
 "displayName": `${namaown}`,
-"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:;;;;\nFN:${namaown}\nitem1.TEL;waid=${global.ownMain}:+${global.ownMain}\nitem1.X-ABLabel:Ponsel\nX-WA-BIZ-DESCRIPTION:[[ ༑ ⟠ 𝐃𝐑𝚺𝐗 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 々 ༑ ]]\nX-WA-BIZ-NAME: [[ ༑ ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ ༑ ]]\nEND:VCARD`,
+"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:;;;;\nFN:${namaown}\nitem1.TEL;waid=${global.ownMain}:+${global.ownMain}\nitem1.X-ABLabel:Ponsel\nX-WA-BIZ-DESCRIPTION:[[ ༑ 𝐙.𝐱.𝐕 ⿻ 𝐏𝐔𝐁𝐋𝐢𝐂 ༑ ]]\nX-WA-BIZ-NAME: [[ ༑ 𝐙.𝐱.𝐕 ⿻ 𝐏𝐔𝐁𝐋𝐢𝐂 ༑ ]]\nEND:VCARD`,
 }
 }), { userJid: m.chat, quoted: m })
 ryozingod.relayMessage(m.chat, contact.message, { messageId: contact.key.id })
@@ -3282,6 +3130,18 @@ var ppWong = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-pictu
 }
 ryozingod.sendMessage(m.chat, { image: { url: ppWong }}, { quoted: m })
 }
+}
+break
+//=================================================//
+case 'changemenu':
+if (!isDeveloper) return joreply(mess.owner)
+if (args.length < 1) return joreply(`Example ${prefix + command} button/non`)
+if (q == 'button') {
+db.data.settings[botNumber].menuType = 'buttonImage'
+joreply(`Successfully Changed Menu To Button List Image`)
+} else if (q == 'non') {
+db.data.settings[botNumber].menuType = 'imageIos'
+joreply(`Successfully Changed Menu To ImageIos`)
 }
 break
 //=================================================//
@@ -3570,7 +3430,7 @@ ryozingod.sendMessage(m.chat, { text: `_ryo itu ganteng banget, aku jdi suka ama
 break
 //=================================================//
 case 'terkentod' : {
-ryozingod.sendMessage(m.chat, { text: `Holy Shiiiieeet🤮🤮🤮. this bitch is gay🤢` }, { quoted: m })
+ryozingod.sendMessage(m.chat, { text: `Hoekkkkkkk🤮🤮🤮. najis ada gay, mati aja lu kontol🤢` }, { quoted: m })
 }
 break
 //=================================================//
@@ -3866,14 +3726,12 @@ var thumbnya = `https://i.ytimg.com/vi/${res.videoId}/hqdefault.jpg`
 var thumbnya = `https://i.ytimg.com/vi/${res.videoId}/default.jpg`
 }
 let inithumb = await getBuffer(thumbnya)
-let teks = `𝐑𝐀𝐕𝐄𝐍 𝐌𝐃 𝐒𝐎𝐍𝐆 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑
-✡𝐘𝐓 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐒𝐎𝐔𝐑𝐂𝐄 : ${res.author.name}
+let teks = `*🎩 Youtube - Downloader 🖥️*
 
-✡𝐘𝐓 𝐕𝐈𝐄𝐖𝐄𝐑𝐒 : ${res.views} Kali
-
-✡𝐌𝐔𝐒𝐈𝐂 𝐃𝐔𝐑𝐀𝐓𝐈𝐎𝐍 : ${res.timestamp}
-
-> 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 ⟠ 𝐃𝐑𝚺𝐗 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 々`
+🌐 Channel : ${res.author.name}
+🚥 Viewers : ${res.views} Kali
+⏱️ Duration : ${res.timestamp}
+🔗 Url : ${res.url}`
 
 ryozingod.sendMessage(m.chat, { contextInfo: {
 externalAdReply: { showAdAttribution: false, 
