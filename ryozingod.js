@@ -633,7 +633,7 @@ const dust = {
       "title": ""
     },
     "body": {
-      "text": "▾ 𝐙͢𝐱𝐕 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 ▾"
+      "text": "⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ - 𝐁𝐘 𝐃𝐑𝐄𝐗"
     },
     "footer": {
       "text": "By - Ryozingod"
@@ -798,7 +798,7 @@ remoteJid: "status@broadcast"
 },
 message: {
 buttonsResponseMessage: {
-selectedButtonId: 'pois0n - zxv',
+selectedButtonId: '⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ - 𝐁𝐘 𝐃𝐑𝐄𝐗',
 type: 1,
 response: {
 selectedDisplayText: 'penis'
@@ -3179,7 +3179,7 @@ const audiovn = "./raven.aac";
           sourceUrl: "https://chat.whatsapp.com/LqYfmGAmfbnHhtSWSsXP1v",
           mediaType: 1,
 	  showAdAttribution: true,
-          renderLargerThumbnail: false,
+          renderLargerThumbnail: true,
           }}
       };
 
@@ -3201,7 +3201,7 @@ case 'r': case 'runtime':
                             thumbnailUrl: 'https://telegra.ph/file/30750b19ab2041daa6528.jpg',
                             sourceUrl: 'https://chat.whatsapp.com/LqYfmGAmfbnHhtSWSsXP1v',
                             mediaType: 1,
-                            renderLargerThumbnail: false
+                            renderLargerThumbnail: true
                         }
                     }
                 }, {
