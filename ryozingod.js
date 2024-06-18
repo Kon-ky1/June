@@ -2187,7 +2187,7 @@ interactiveMessage: {
 },
 {
 "name": "cta_url",
-"buttonParamsJson": "{\"display_text\":\"Saluran WhatsApp\",\"url\":\"https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4\",\"merchant_url\":\"https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4\"}"
+"buttonParamsJson": "{\"display_text\":\"𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 \",\"url\":\"https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4\",\"merchant_url\":\"https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4\"}"
 }
 ],
 "messageParamsJson": ""
@@ -3178,7 +3178,7 @@ const audiovn = "./raven.aac";
           thumbnailUrl: "https://telegra.ph/file/30750b19ab2041daa6528.jpg",
           sourceUrl: "https://chat.whatsapp.com/LqYfmGAmfbnHhtSWSsXP1v",
           mediaType: 1,
-	  showAdAttribution: true,
+	  showAdAttribution: false,
           renderLargerThumbnail: true,
           }}
       };
@@ -3195,7 +3195,7 @@ case 'r': case 'runtime':
                     text: pinga,
                     contextInfo: {
                         externalAdReply: {
-                            showAdAttribution: true,
+                            showAdAttribution: false,
                             title: '⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ - 𝐁𝐘 𝐃𝐑𝐄𝐗',
                             body: 'https://chat.whatsapp.com/LqYfmGAmfbnHhtSWSsXP1v',
                             thumbnailUrl: 'https://telegra.ph/file/30750b19ab2041daa6528.jpg',
