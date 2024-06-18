@@ -3128,9 +3128,9 @@ case "getpp":  case "dp": {
  } 
  break
 //=================================================//
-case 'groupicon': case  'getppgc':
+	case 'geticon': case 'groupicon': case  'getppgc':
 	if (!isGroup) return 
-	joeply(mess.wait)
+	joreply(mess.wait)
 	try {
 	var ppimg = await ryozingod.profilePictureUrl(m.chat, 'image')
 	} catch (err) {
