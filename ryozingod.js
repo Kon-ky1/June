@@ -3124,13 +3124,13 @@ case "getpp":  case "dp": {
  } 
   if (!m.quoted && !m.mentionedJid) throw `Tag a user!`; 
  bar = `𝐏𝐫𝐨𝐟𝐢𝐥𝐞 𝐩𝐢𝐜𝐭𝐮𝐫𝐞 of ${qd} 𝐠𝐞𝐧𝐞𝐫𝐚𝐭𝐞𝐝 𝐛𝐲 ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻`; 
- ryozingod.sendMessage(m.chat, { image: { url: pp2}, caption: bar, fileLength: "999999999999"}, { quoted: fcontact}); 
+ ryozingod.sendMessage(m.chat, { image: { url: pp2}, caption: bar, fileLength: "999999999999"}, { quoted: m}); 
  } 
  break
 //=================================================//
 case 'groupicon': case  'getppgc':
 	if (!isGroup) return 
-	xgreply(mess.wait)
+	joeply(mess.wait)
 	try {
 	var ppimg = await ryozingod.profilePictureUrl(m.chat, 'image')
 	} catch (err) {
