@@ -2090,10 +2090,9 @@ break
 case "menu": case "help": case "helep": {
 //text menu
 let njing = `
-   *[ 🎩 ]  •  𝐙𝐱͢𝐕 - 𝐂𝐋𝐢͢𝐄𝐍𝐓 🦠*
+     *[ 🎩 ]  •  ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ 🦠*
 
-╭❐  ⌜ ZxV - Bot ⌟  ❐
-│⭔ Creator : thezetsuboxygen
+│⭔ Creator : ⟠ 𝐃𝐑𝚺𝐗 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 々
 │⭔ Library : WS-Baileys
 │⭔ Type : Case
 │⭔ Status : Ready
@@ -2129,7 +2128,7 @@ interactiveMessage: {
 },
 },
 "header": {
-"title": "    *[ 🎩 ]  •  𝐙𝐱͢𝐕 - 𝐂𝐋𝐢͢𝐄𝐍𝐓 🦠*",
+"title": "    *[ 🎩 ]  •  ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ 🦠*",
 ...(await prepareWAMessageMedia({ image: overlaid }, { upload: ryozingod.waUploadToServer })),
 "hasMediaAttachment": true
 },
@@ -3115,36 +3114,119 @@ joreply(m.pushName)
 }
 break
 //=================================================//
-case "getpp": {
-if (Input) {
-try {
-var ppWong = await ryozingod.profilePictureUrl(Input, "image")
-} catch {
-var ppWong = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60"
-}
-ryozingod.sendMessage(m.chat, { image: { url: ppWong }}, { quoted: m })
-} else {
-try {
-var ppWong = await ryozingod.profilePictureUrl(m.sender, "image")
-} catch {
-var ppWong = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60"
-}
-ryozingod.sendMessage(m.chat, { image: { url: ppWong }}, { quoted: m })
-}
+case "getpp":  case "dp": { 
+ try { 
+ ha = m.quoted.sender; 
+ qd = await ryozingod.getName(ha); 
+ pp2 = await ryozingod.profilePictureUrl(ha,'image'); 
+ } catch {  
+ pp2 = 'https://tinyurl.com/yx93l6da'; 
+ } 
+  if (!m.quoted && !m.mentionedJid) throw `Tag a user!`; 
+ bar = `𝐏𝐫𝐨𝐟𝐢𝐥𝐞 𝐩𝐢𝐜𝐭𝐮𝐫𝐞 of ${qd} 𝐠𝐞𝐧𝐞𝐫𝐚𝐭𝐞𝐝 𝐛𝐲 ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻`; 
+ ryozingod.sendMessage(m.chat, { image: { url: pp2}, caption: bar, fileLength: "999999999999"}, { quoted: fcontact}); 
+ } 
+ break
+//=================================================//
+case 'groupicon': case  'getppgc':
+	if (!isGroup) return 
+	xgreply(mess.wait)
+	try {
+	var ppimg = await ryozingod.profilePictureUrl(m.chat, 'image')
+	} catch (err) {
+	console.log(err)
+	var ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
+	}
+	await ryozingod.sendMessage(m.chat, { image: { url: ppimg }}, { quoted: m })
+	break
+//=================================================//		
+case 'getcase':
+                if (!isDeveloper) return joreply(mess.owner);
+                try {
+                   const getCase = (cases) => {
+                      return "case" + `'${cases}'` + fs.readFileSync("ryozingod.js").toString().split('case \'' + cases + '\'')[1].split("break")[0] + "break"
+                   }
+                   joreply(`${getCase(q)}`)
+                } catch {
+                  joreply(`> *case ${q} not found!*`)
+                }
+            break
+//=================================================//
+case 'ping': case 'p': {
+let timestamp = speed()
+let latensi = speed() - timestamp
+joreply(`⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ 𝐒𝐏𝐄𝐄𝐃\n *${latensi.toFixed(4)} ms*`)
 }
 break
 //=================================================//
-case 'changemenu':
+case 'a': case "alive":
+const audiovn = "./raven.aac";
+    const dooc = {
+        audio: {
+          url: audiovn
+        },
+        mimetype: 'audio/mp4',
+        ptt: true,
+        waveform:  [100, 0, 100, 0, 100, 0, 100],
+        fileName: "",
+
+        contextInfo: {
+          mentionedJid: [m.sender],
+          externalAdReply: {
+          title: "𝐑𝐀𝐕𝐄𝐍 𝐌𝐃 𝚰𝐒 𝚮𝚵𝚪𝚵 𝚻𝚯 𝐖𝚯𝚪𝐒𝚵𝚴 𝐔𝚸 𝐘𝚯𝐔𝚪 𝐃𝚵𝐋𝚰𝐆𝚮𝚻𝐅𝐔𝐋 𝐃𝚫𝐘",
+          body: "https://chat.whatsapp.com/LqYfmGAmfbnHhtSWSsXP1v",
+          thumbnailUrl: "https://telegra.ph/file/30750b19ab2041daa6528.jpg",
+          sourceUrl: "https://chat.whatsapp.com/LqYfmGAmfbnHhtSWSsXP1v",
+          mediaType: 1,
+	  showAdAttribution: true,
+          renderLargerThumbnail: false,
+          }}
+      };
+
+
+await ryozingod.sendMessage(m.chat, dooc, {quoted: m});
+
+
+break;
+//=================================================//
+case 'r': case 'runtime':
+                let pinga = `⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ 𝐡𝐚𝐬 𝐛𝐞𝐞𝐧 𝐫𝐮𝐧𝐧𝐢𝐧𝐠 𝐟𝐨𝐫 ${runtime(process.uptime())}`
+                ryozingod.sendMessage(m.chat, {
+                    text: pinga,
+                    contextInfo: {
+                        externalAdReply: {
+                            showAdAttribution: true,
+                            title: '⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ - 𝐁𝐘 𝐃𝐑𝐄𝐗',
+                            body: 'https://chat.whatsapp.com/LqYfmGAmfbnHhtSWSsXP1v',
+                            thumbnailUrl: 'https://telegra.ph/file/30750b19ab2041daa6528.jpg',
+                            sourceUrl: 'https://chat.whatsapp.com/LqYfmGAmfbnHhtSWSsXP1v',
+                            mediaType: 1,
+                            renderLargerThumbnail: false
+                        }
+                    }
+                }, {
+                    quoted: m
+                })
+                break
+//=================================================//
+case 'buttons': case 'button':
 if (!isDeveloper) return joreply(mess.owner)
-if (args.length < 1) return joreply(`Example ${prefix + command} button/non`)
-if (q == 'button') {
+if (args.length < 1) return joreply(`Example ${prefix + command} on/off`)
+if (q == 'on') {
 db.data.settings[botNumber].menuType = 'buttonImage'
 joreply(`Successfully Changed Menu To Button List Image`)
-} else if (q == 'non') {
-db.data.settings[botNumber].menuType = 'imageIos'
-joreply(`Successfully Changed Menu To ImageIos`)
+} else if (q == 'off') {
+db.data.settings[botNumber].menuType = 'externalImage'
+joreply(`Successfully Changed Auto Typing To External Image`)
 }
 break
+//=================================================//
+case 'restart':  
+if (!isDeveloper) return jogreply(mess.owner)
+joreply(`> *raven md is now restarting*\n> *wait for 20 seconds*`)
+  await sleep(3000)  
+  process.exit()  
+  break
 //=================================================//
 case 'autorecord':
 if (!isDeveloper) return joreply(mess.owner)
