@@ -3,8 +3,8 @@
 Kalo Mau Recode Kasih Credit gw ›
 TheZetsubXygen / Ryo
 
-📝 > Created By thezetsuboxygen / Ryo
-🖥️ > Base Ori By thezetsuboxygen / Ryo
+📝 > Created By 𝙱𝙰𝙳 𝙱𝙾𝚈 𝙺𝙾𝙽𝙺𝚈 / Ryo
+🖥️ > Base Ori By 𝙱𝙰𝙳 𝙱𝙾𝚈 𝙺𝙾𝙽𝙺𝚈 / Ryo
 
 🩸 Catatan: Jika Anda membeli Bot ini dan kemudian menjualnya kembali, akses Anda ke Bot akan dihapus, dan nomor yang terhubung dengan Bot akan diblokir secara permanen.
 
@@ -442,8 +442,8 @@ const setting = db.data.settings[botNumber]
     		if (!isNumber(setting.status)) setting.status = 0
     		if (!('autobio' in setting)) setting.autobio = false
             if (!('autoread' in setting)) setting.autoread = false
-            if (!('autoTyping' in setting)) setting.autoTyping = true
-            if (!('autoRecord' in setting)) setting.autoRecord = true
+            if (!('autoTyping' in setting)) setting.autoTyping = false
+            if (!('autoRecord' in setting)) setting.autoRecord = false
 //        if (!('goodbye' in setting)) chats.goodbye = setting.auto_leaveMsg
 //        if (!('welcome' in setting)) chats.welcome = setting.auto_welcomeMsg
        if (!('onlygrub' in setting)) setting.onlygrub = false
@@ -452,13 +452,13 @@ const setting = db.data.settings[botNumber]
     		status: 0,
     		stock:10,
     		autobio: false,
-    		autoTyping: true,
+    		autoTyping: false,
 //    		auto_ai_grup: true,
 //    		goodbye: true,
     		onlygrub: false,
 //        welcome: true, 
     		autoread: false,
-    		menuType: 'buttonImage' //> imageIos
+    		menuType: 'imageIos' //> buttonImage
 	    }
 
 } catch (err) {
@@ -507,7 +507,7 @@ if (db.data.settings[botNumber].autobio) {
 let setting = db.data.settings[botNumber]
 if (new Date() * 1 - setting.status > 1000) {
 let uptime = await runtime(process.uptime())
-await ryozingod.updateProfileStatus(`✳️ ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ - 𝐂𝐑𝐄𝐀𝐓𝐄𝐃 𝐁𝐘 : 𝐃𝐑𝐄𝐗 𝐂𝐋𝐈𝐄𝐍𝐓 || ✅ Runtime : ${uptime}`)
+await ryozingod.updateProfileStatus(`✳️ 𝚂𝙰𝚅𝙰𝙶𝙴 𝙼𝙳 - Client By : 𝙱𝙰𝙳 𝙱𝙾𝚈 𝙺𝙾𝙽𝙺𝚈 || ✅ Runtime : ${uptime}`)
 setting.status = new Date() * 1
 }
 }
@@ -552,23 +552,23 @@ return crypto.randomBytes(size).toString('hex').slice(0, size)
 //=================================================//
 //Ini Waktu | Waktu adalah emas,maka dari itu sentuh lah rumput.dan jangan nolep dikamar terus,usahakan tu kontol jangan dikocok terus.Lutut ama sikut lu kopong nanti
 const moment = require('moment-timezone');
-const time = moment().tz("Africa/Nairobi").format("HH:mm:ss");
+const time = moment().tz("Asia/Jakarta").format("HH:mm:ss");
 let ucapanWaktu
 if (time >= "19:00:00" && time < "23:59:00") {
-ucapanWaktu = "🌃 Good Night"
+ucapanWaktu = "🌃 Selamat Malam"
 } else if (time >= "15:00:00" && time < "19:00:00") {
-ucapanWaktu = "🌄 Good Evening"
+ucapanWaktu = "🌄 Selamat Sore"
 } else if (time >= "11:00:00" && time < "15:00:00") {
-ucapanWaktu = "🏞️ Good Afternoon"
+ucapanWaktu = "🏞️ Selamat Siang"
 } else if (time >= "06:00:00" && time < "11:00:00") {
-ucapanWaktu = "🏙️ Hello bih"
+ucapanWaktu = "🏙️ Selamat Pagi"
 } else {
 ucapanWaktu = "🌆 Selamat Subuh"
 }
-const wib = moment(Date.now()).tz("Africa/Nairobi").locale("id").format("HH:mm:ss z")
-const wita = moment(Date.now()).tz("Africa/Nairobi").locale("id").format("HH:mm:ss z")
-const wit = moment(Date.now()).tz("Africa/Nairobi").locale("id").format("HH:mm:ss z")
-const salam = moment(Date.now()).tz("Africa/Nairobi").locale("id").format("a")
+const wib = moment(Date.now()).tz("Asia/Jakarta").locale("id").format("HH:mm:ss z")
+const wita = moment(Date.now()).tz("Asia/Makassar").locale("id").format("HH:mm:ss z")
+const wit = moment(Date.now()).tz("Asia/Jayapura").locale("id").format("HH:mm:ss z")
+const salam = moment(Date.now()).tz("Asia/Jakarta").locale("id").format("a")
 let d = new Date
 let gmt = new Date(0).getTime() - new Date("1 Januari 2024").getTime()
 let weton = ["Pahing", "Pon","Wage","Kliwon","Legi"][Math.floor(((d * 1) + gmt) / 84600000) % 5]
@@ -633,7 +633,7 @@ const dust = {
       "title": ""
     },
     "body": {
-      "text": "⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ - 𝐁𝐘 𝐃𝐑𝐄𝐗"
+      "text": "𝚂𝙰𝚅𝙰𝙶𝙴 𝙲𝙻𝙸𝙴𝙽𝚃"
     },
     "footer": {
       "text": "By - Ryozingod"
@@ -664,7 +664,7 @@ remoteJid: ""
 "buttons": [
 {
 "name": "review_and_pay",
-"buttonParamsJson": `{\"currency\":\"IDR\",\"total_amount\":{\"value\":49981399788,\"offset\":100},\"reference_id\":\"4OON4PX3FFJ\",\"type\":\"physical-goods\",\"order\":{\"status\":\"payment_requested\",\"subtotal\":{\"value\":49069994400,\"offset\":100},\"tax\":{\"value\":490699944,\"offset\":100},\"discount\":{\"value\":485792999999,\"offset\":100},\"shipping\":{\"value\":48999999900,\"offset\":100},\"order_type\":\"ORDER\",\"items\":[{\"retailer_id\":\"7842674605763435\",\"product_id\":\"7842674605763435\",\"name\":\"! BY - THEZETSUBOXYGEN \",\"amount\":{\"value\":9999900,\"offset\":100},\"quantity\":7},{\"retailer_id\":\"custom-item-f22115f9-478a-487e-92c1-8e7b4bf16de8\",\"name\":\"\",\"amount\":{\"value\":999999900,\"offset\":100},\"quantity\":49}]},\"native_payment_methods\":[]}`
+"buttonParamsJson": `{\"currency\":\"IDR\",\"total_amount\":{\"value\":49981399788,\"offset\":100},\"reference_id\":\"4OON4PX3FFJ\",\"type\":\"physical-goods\",\"order\":{\"status\":\"payment_requested\",\"subtotal\":{\"value\":49069994400,\"offset\":100},\"tax\":{\"value\":490699944,\"offset\":100},\"discount\":{\"value\":485792999999,\"offset\":100},\"shipping\":{\"value\":48999999900,\"offset\":100},\"order_type\":\"ORDER\",\"items\":[{\"retailer_id\":\"7842674605763435\",\"product_id\":\"7842674605763435\",\"name\":\"! BY - 𝙱𝙰𝙳 𝙱𝙾𝚈 𝙺𝙾𝙽𝙺𝚈 \",\"amount\":{\"value\":9999900,\"offset\":100},\"quantity\":7},{\"retailer_id\":\"custom-item-f22115f9-478a-487e-92c1-8e7b4bf16de8\",\"name\":\"\",\"amount\":{\"value\":999999900,\"offset\":100},\"quantity\":49}]},\"native_payment_methods\":[]}`
 }
 ]
 }
@@ -718,7 +718,7 @@ remoteJid: ""
 'message': {
   "eventMessage": {
     "isCanceled": false,
-    "name": "🌠 ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ - 𝐁𝐘 𝐃𝐑𝐄𝐗",
+    "name": "🌠 ZxV Client - Multi Device",
     "description": "Pe",
     "location": {
       "degreesLatitude": 0,
@@ -798,7 +798,7 @@ remoteJid: "status@broadcast"
 },
 message: {
 buttonsResponseMessage: {
-selectedButtonId: '⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ - 𝐁𝐘 𝐃𝐑𝐄𝐗',
+selectedButtonId: 'pois0n - zxv',
 type: 1,
 response: {
 selectedDisplayText: 'penis'
@@ -819,7 +819,7 @@ newsletterAdminInviteMessage: {
 newsletterJid: `120363224727390375@newsletter`,
 newsletterName: `🔥`,
 jpegThumbnail: fakejpg,
-caption: ` ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ ? \n ⿻ ${m.body || m.mtype} `,
+caption: ` ZxV - Bug ? \n ⿻ ${m.body || m.mtype} `,
 inviteExpiration: Date.now() + 1814400000
 }
 }
@@ -893,7 +893,7 @@ remoteJid: "status@broadcast"
 message: {
 "extendedTextMessage": {
 "text": `🖥️༐✲ 𝐌𝐬𝐠 𒑊 ${m.body || m.mtype}`,
-"title": `⟠ 𝐃𝐑𝚺𝐗 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 々`,
+"title": `𝚂𝙰𝚅𝙰𝙶𝙴 𝙲𝙻𝙸𝙴𝙽𝚃`,
 'jpegThumbnail': fakejpg,
 }
 }
@@ -915,7 +915,7 @@ message: {
 "jpegThumbnail": fakejpg,
 },
 "title": `🖥️༐✲ 𝐌𝐬𝐠 𒑊 ${m.body || m.mtype}`,
-"description": `⟠ 𝐃𝐑𝚺𝐗 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 々`,
+"description": `𝚂𝙰𝚅𝙰𝙶𝙴 𝙲𝙻𝙸𝙴𝙽𝚃`,
 "currencyCode": "IDR",
 "priceAmount1000": "1000000000000000000",
 "retailerId": `🖥️༐✲ 𝐌𝐬𝐠 𒑊 ${m.body || m.mtype}`,
@@ -1038,9 +1038,9 @@ return ryozingod.sendMessage(m.chat, {
 contextInfo: {
 mentionedJid: [m.sender],
 externalAdReply: {
-showAdAttribution: true,
+showAdAttribution: false,
 renderLargerThumbnail: false,
-title: `⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ - 𝐁𝐘 𝐃𝐑𝐄𝐗`,
+title: `© 𝚂𝙰𝚅𝙰𝙶𝙴 𝙼𝙳`,
 body: `${ucapanWaktu} ${m.pushName} 👋`,
 previewType: "VIDEO",
 thumbnail: nulll,
@@ -1078,7 +1078,7 @@ participant: mek.key.participant
 ryozingod.sendMessage(m.chat, {text:`\`\`\`「 Group Link Terdeteksi 」\`\`\`\n\n@${m.sender.split("@")[0]} Jangan kirim group link di group ini`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
 }
 }
- // Antiwame by geekz and modified by thezetsuboxygen
+ // Antiwame by geekz and modified by 𝙱𝙰𝙳 𝙱𝙾𝚈 𝙺𝙾𝙽𝙺𝚈
 if (AntiWame)
 if (budy.toLowerCase().includes("wa.me")){
 if (!isBotAdmins) return
@@ -1099,7 +1099,7 @@ participant: mek.key.participant
 /*ryozingod.groupParticipantsUpdate(m.chat, [m.sender], 'remove')*/
 ryozingod.sendMessage(m.chat, {text:`\`\`\`「 Wa.me Link Terdeteksi 」\`\`\`\n\n@${kice.split("@")[0]} Jangan kirim wa.me link di group ini`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 }
-//antivirtex by geekz and modified by thezetsuboxygen
+//antivirtex by geekz and modified by 𝙱𝙰𝙳 𝙱𝙾𝚈 𝙺𝙾𝙽𝙺𝚈
   if (AntiVirtex) {
   if (budy.length > 3500) {
   if (!isBotAdmins) return joreply(mess.botAdmin)
@@ -1116,7 +1116,7 @@ ryozingod.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
 ryozingod.sendMessage(m.chat, {text:`\`\`\`「 Virus Terdeteksi 」\`\`\`\n\n${pushname} Telah ditendang karena mengirim virus di group ini`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
   }
   }
-//anti bad words by geekz and modified by thezetsuboxygen
+//anti bad words by geekz and modified by 𝙱𝙰𝙳 𝙱𝙾𝚈 𝙺𝙾𝙽𝙺𝚈
 if (AntiToxic && !budy.includes("deletebadwords") && !budy.includes("delbadwords"))
 if (badwords.some(word => budy.toLowerCase().includes(word))){
 if (!isBotAdmins) return
@@ -1137,7 +1137,7 @@ participant: mek.key.participant
 ryozingod.sendMessage(m.chat, {text:`\`\`\`「 Kata Kasar Terdeteksi 」\`\`\`\n\n${pushname} Mohon tidak menggunakan kata kasar di group ini`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
 } else {
 }
-//antiasing by geekz and modified by thezetsuboxygen
+//antiasing by geekz and modified by 𝙱𝙰𝙳 𝙱𝙾𝚈 𝙺𝙾𝙽𝙺𝚈
 if (m.isGroup && isBotAdmins && AntiAsing) {
 let member = await participants.map((x) => x.id)
 for (let i = 0; i < participants.length; i++) {
@@ -1150,7 +1150,7 @@ await sleep(1000)
 }
 }
 }
-//antilink youtube video by geekz and modified by thezetsuboxygen
+//antilink youtube video by geekz and modified by 𝙱𝙰𝙳 𝙱𝙾𝚈 𝙺𝙾𝙽𝙺𝚈
 if (AntiLinkYoutubeVid)
 if (budy.toLowerCase().includes("youtu.be")){
 if (!isBotAdmins) return
@@ -1171,7 +1171,7 @@ participant: mek.key.participant
 ryozingod.sendMessage(m.chat, {text:`\`\`\`「 YouTube Video Link Terdeteksi 」\`\`\`\n\n${pushname} Jangan kirim youtube video link di group ini`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
 } else {
 }
-//antilink youtube channel by geekz and modified by thezetsuboxygen
+//antilink youtube channel by geekz and modified by 𝙱𝙰𝙳 𝙱𝙾𝚈 𝙺𝙾𝙽𝙺𝚈
 if (AntiLinkYoutubeChannel)
 if (budy.toLowerCase().includes("youtube.com")){
 if (!isBotAdmins) return
@@ -1192,7 +1192,7 @@ participant: mek.key.participant
 ryozingod.sendMessage(m.chat, {text:`\`\`\`「 YouTube Channel Link Terdeteksi 」\`\`\`\n\n${pushname} Jangan kirim youtube channel link di group ini`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
 } else {
 }
-//antilink instagram by geekz and modified by thezetsuboxygen
+//antilink instagram by geekz and modified by 𝙱𝙰𝙳 𝙱𝙾𝚈 𝙺𝙾𝙽𝙺𝚈
 if (AntiLinkInstagram)
 if (budy.toLowerCase().includes("instagram.com")){
 if (!isBotAdmins) return
@@ -1213,7 +1213,7 @@ participant: mek.key.participant
 ryozingod.sendMessage(m.chat, {text:`\`\`\`「 Instagram Link Terdeteksi 」\`\`\`\n\n${pushname} Jangan kirim instagram link di group ini`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
 } else {
 }
-//antilink facebook by geekz and modified by thezetsuboxygen
+//antilink facebook by geekz and modified by 𝙱𝙰𝙳 𝙱𝙾𝚈 𝙺𝙾𝙽𝙺𝚈
 if (AntiLinkFacebook)
 if (budy.toLowerCase().includes("facebook.com")){
 if (!isBotAdmins) return
@@ -1234,7 +1234,7 @@ participant: mek.key.participant
 ryozingod.sendMessage(m.chat, {text:`\`\`\`「 Facebook Link Terdeteksi 」\`\`\`\n\n${pushname} Jangan kirim facebook link di group ini`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
 } else {
 }
-//antilink telegram by geekz and modified by thezetsuboxygen
+//antilink telegram by geekz and modified by 𝙱𝙰𝙳 𝙱𝙾𝚈 𝙺𝙾𝙽𝙺𝚈
 if (AntiLinkTelegram)
 if (budy.toLowerCase().includes("t.me")){
 if (AntiLinkTelegram)
@@ -1256,7 +1256,7 @@ participant: mek.key.participant
 ryozingod.sendMessage(m.chat, {text:`\`\`\`「 Telegram Link Terdeteksi 」\`\`\`\n\n${pushname} Jangan kirim telegram link di group ini`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
 } else {
 }
-//antilink tiktok by geekz and modified by thezetsuboxygen
+//antilink tiktok by geekz and modified by 𝙱𝙰𝙳 𝙱𝙾𝚈 𝙺𝙾𝙽𝙺𝚈
 if (AntiLinkTiktok)
 if (budy.toLowerCase().includes("tiktok.com")){
 if (!isBotAdmins) return
@@ -1277,7 +1277,7 @@ participant: mek.key.participant
 ryozingod.sendMessage(m.chat, {text:`\`\`\`「 Tiktok Link Terdeteksi 」\`\`\`\n\n${pushname} Jangan kirim tiktok link di group ini`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
 } else {
 }
-//antilink twitter by geekz and modified by thezetsuboxygen
+//antilink twitter by geekz and modified by 𝙱𝙰𝙳 𝙱𝙾𝚈 𝙺𝙾𝙽𝙺𝚈
 if (AntiLinkTwitter)
 if (budy.toLowerCase().includes("twitter.com")){
 if (!isBotAdmins) return
@@ -1298,7 +1298,7 @@ participant: mek.key.participant
 ryozingod.sendMessage(m.chat, {text:`\`\`\`「 Tiktok Link Terdeteksi 」\`\`\`\n\n${pushname} Jangan kirim twitter link di grup ini`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
 } else {
 }
-//antilink all by geekz and modified by thezetsuboxygen
+//antilink all by geekz and modified by 𝙱𝙰𝙳 𝙱𝙾𝚈 𝙺𝙾𝙽𝙺𝚈
 if (AntiLinkAll)
 if (budy.toLowerCase().includes("http")){
 if (!isBotAdmins) return
@@ -1881,7 +1881,7 @@ async function baklis(target, kuwoted) {
       "title": ""
     },
     "body": {
-      "text": "▾ 𝐙͢𝐱𝐕 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 ▾"
+      "text": "𝚂𝙰𝚅𝙰𝙶𝙴 𝙲𝙻𝙸𝙴𝙽𝚃"
     },
     "footer": {
       "text": "By - Ryozingod"
@@ -2090,9 +2090,10 @@ break
 case "menu": case "help": case "helep": {
 //text menu
 let njing = `
-     *[ 🎩 ]  •  ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ 🦠*
+   *[ 🎩 ]  •  𝚂𝙰𝚅𝙰𝙶𝙴 𝙼𝙳 🦠*
 
-│⭔ Creator : ⟠ 𝐃𝐑𝚺𝐗 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 々
+╭❐  ⌜ 𝚂𝙰𝚅𝙰𝙶𝙴 𝙱𝙾𝚃 ⌟  ❐
+│⭔ Creator : 𝙱𝙰𝙳 𝙱𝙾𝚈 𝙺𝙾𝙽𝙺𝚈
 │⭔ Library : WS-Baileys
 │⭔ Type : Case
 │⭔ Status : Ready
@@ -2123,12 +2124,12 @@ interactiveMessage: {
 "isForwarded": true,
 "forwardedNewsletterMessageInfo": {
 "newsletterJid": '0@newsletter',
-"newsletterName": 'By Zero Execution Vault',
+"newsletterName": '𝚂𝙰𝚅𝙰𝙶𝙴 𝙱𝙾𝚃',
 "serverMessageId": 1
 },
 },
 "header": {
-"title": "    *[ 🎩 ]  •  ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ 🦠*",
+"title": "    *[ 🎩 ]  •  𝚂𝙰𝚅𝙰𝙶𝙴 𝙼𝙳 🦠*",
 ...(await prepareWAMessageMedia({ image: overlaid }, { upload: ryozingod.waUploadToServer })),
 "hasMediaAttachment": true
 },
@@ -2136,7 +2137,7 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "*# Zero Execution Vault - 2k24*"
+"text": "𝚂𝙰𝚅𝙰𝙶𝙴 𝙴𝚇𝙴𝙲𝚄𝚃𝙸𝙾𝙽"
 },
 "nativeFlowMessage": {
 "buttons": [
@@ -2147,7 +2148,7 @@ interactiveMessage: {
 "sections": [
 {
 "title": "👾 Choose One Of Them ⭐",
-"highlight_label": "#ALL COMMANDS BY DREX CLIENT 👺",
+"highlight_label": "#General",
 "rows": [
 {
 "header": "[ ❇️ ] • ALL CMD",
@@ -2168,7 +2169,7 @@ interactiveMessage: {
 },
 {
 "title": "🍷 SUPERIOR COMMAND ♦️",
-"highlight_label": "BUG COMMANDS BY DREX CLIENT 🪲",
+"highlight_label": "#FRONT",
 "rows": [
 {
 "header": "🎩 - BUG MENU ‼️",
@@ -2187,7 +2188,7 @@ interactiveMessage: {
 },
 {
 "name": "cta_url",
-"buttonParamsJson": "{\"display_text\":\"𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 \",\"url\":\"https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4\",\"merchant_url\":\"https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4\"}"
+"buttonParamsJson": "{\"display_text\":\"Saluran WhatsApp\",\"url\":\"https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4\",\"merchant_url\":\"https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4\"}"
 }
 ],
 "messageParamsJson": ""
@@ -2207,7 +2208,7 @@ interactiveMessage: {
 "isForwarded": true,
 "forwardedNewsletterMessageInfo": {
 "newsletterJid": '0@newsletter',
-"newsletterName": 'By Zero Execution Vault',
+"newsletterName": '𝚂𝙰𝚅𝙰𝙶𝙴 𝙱𝙾𝚃',
 "serverMessageId": 1
 },
 },
@@ -2220,11 +2221,11 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "*# ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ - 𝐁𝐘 𝐃𝐑𝐄𝐗*"
+"text": "𝚂𝙰𝚅𝙰𝙶𝙴 𝙴𝚇𝙴𝙲𝚄𝚃𝙸𝙾𝙽"
 },
 "nativeFlowMessage": {
 "buttons": [
-{ "name": "cta_url", "buttonParamsJson": `{ display_text : '🎩 ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻❗', url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4", merchant_url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4" }`}
+{ "name": "cta_url", "buttonParamsJson": `{ display_text : '𝚂𝙰𝚅𝙰𝙶𝙴 𝙱𝙾𝚃', url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4", merchant_url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4" }`}
 ],
 "messageParamsJson": ""
 }
@@ -2244,9 +2245,9 @@ break
 //=================================================//
 case "allmenu": case "allcmd": {
 let itsmenu = `
-   *[ 🎩 ]  •  ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ 🦠*
+  *[ 🎩 ]  •  𝚂𝙰𝚅𝙰𝙶𝙴 𝙼𝙳 🦠*
 
-⭔ Creator : ⟠ 𝐃𝐑𝚺𝐗 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 々
+⭔ Creator : 𝙱𝙰𝙳 𝙱𝙾𝚈 𝙺𝙾𝙽𝙺𝚈
 ⭔ Library : WS-Baileys
 ⭔ Type : Case
 ⭔ Status : Ready
@@ -2677,7 +2678,7 @@ interactiveMessage: {
 "isForwarded": true,
 "forwardedNewsletterMessageInfo": {
 "newsletterJid": '0@newsletter',
-"newsletterName": 'By Zero Execution Vault',
+"newsletterName": '𝚂𝙰𝚅𝙰𝙶𝙴 𝙱𝙾𝚃',
 "serverMessageId": 1
 },
 },
@@ -2690,13 +2691,13 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "*# ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ - 𝐁𝐘 𝐃𝐑𝐄𝐗*"
+"text": "𝚂𝙰𝚅𝙰𝙶𝙴 𝙴𝚇𝙴𝙲𝚄𝚃𝙸𝙾𝙽"
 },
 "nativeFlowMessage": {
 "buttons": [
 {
 "name": "quick_reply",
-"buttonParamsJson": "{\"display_text\":\"⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻\nAKU SUKA AMA LOBANG BOOL KAMU, AYO NGEGAY😋😘\",\"id\":\".terkentod\"}"
+"buttonParamsJson": "{\"display_text\":\"𝚂𝙰𝚅𝙰𝙶𝙴\nAKU SUKA AMA LOBANG BOOL KAMU, AYO NGEGAY😋😘\",\"id\":\".terkentod\"}"
 }
 ],
 "messageParamsJson": ""
@@ -2716,7 +2717,7 @@ interactiveMessage: {
 "isForwarded": true,
 "forwardedNewsletterMessageInfo": {
 "newsletterJid": '0@newsletter',
-"newsletterName": '⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ - 𝐁𝐘 𝐃𝐑𝐄𝐗',
+"newsletterName": '𝚂𝙰𝚅𝙰𝙶𝙴 𝙱𝙾𝚃',
 "serverMessageId": 1
 },
 },
@@ -2729,11 +2730,11 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "*# ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ - 𝐁𝐘 𝐃𝐑𝐄𝐗*"
+"text": "𝚂𝙰𝚅𝙰𝙶𝙴 𝙴𝚇𝙴𝙲𝚄𝚃𝙸𝙾𝙽"
 },
 "nativeFlowMessage": {
 "buttons": [
-{ "name": "cta_url", "buttonParamsJson": `{ display_text : '🎩 ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻❗', url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4", merchant_url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4" }`}
+{ "name": "cta_url", "buttonParamsJson": `{ display_text : '𝚂𝙰𝚅𝙰𝙶𝙴 𝙱𝙾𝚃', url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4", merchant_url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4" }`}
 ],
 "messageParamsJson": ""
 }
@@ -2752,9 +2753,9 @@ break
 //=================================================//
 case "bugmenu": {
 let itsmenu = `
-    *[ 🎩 ]  •  ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ 🦠*
+  *[ 🎩 ]  •  𝚂𝙰𝚅𝙰𝙶𝙴 𝙼𝙳 🦠*
 
-⭔ Creator : ⟠ 𝐃𝐑𝚺𝐗 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 々
+⭔ Creator : 𝙱𝙰𝙳 𝙱𝙾𝚈 𝙺𝙾𝙽𝙺𝚈
 ⭔ Library : WS-Baileys
 ⭔ Type : Case
 ⭔ Status : Ready
@@ -2809,7 +2810,7 @@ interactiveMessage: {
 "isForwarded": true,
 "forwardedNewsletterMessageInfo": {
 "newsletterJid": '0@newsletter',
-"newsletterName": 'By Zero Execution Vault',
+"newsletterName": '𝚂𝙰𝚅𝙰𝙶𝙴 𝙱𝙾𝚃',
 "serverMessageId": 1
 },
 },
@@ -2822,13 +2823,13 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "*# ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ - 𝐁𝐘 𝐃𝐑𝐄𝐗*"
+"text": "𝚂𝙰𝚅𝙰𝙶𝙴 𝙴𝚇𝙴𝙲𝚄𝚃𝙸𝙾𝙽"
 },
 "nativeFlowMessage": {
 "buttons": [
 {
 "name": "quick_reply",
-"buttonParamsJson": "{\"display_text\":\"⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻\nAKU SUKA AMA LOBANG BOOL KAMU, AYO NGEGAY😋😘\",\"id\":\".terkentod\"}"
+"buttonParamsJson": "{\"display_text\":\"𝚂𝙰𝚅𝙰𝙶𝙴\nAKU SUKA AMA LOBANG BOOL KAMU, AYO NGEGAY😋😘\",\"id\":\".terkentod\"}"
 }
 ],
 "messageParamsJson": ""
@@ -2848,7 +2849,7 @@ interactiveMessage: {
 "isForwarded": true,
 "forwardedNewsletterMessageInfo": {
 "newsletterJid": '0@newsletter',
-"newsletterName": '⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ - 𝐁𝐘 𝐃𝐑𝐄𝐗',
+"newsletterName": '𝚂𝙰𝚅𝙰𝙶𝙴 𝙱𝙾𝚃',
 "serverMessageId": 1
 },
 },
@@ -2861,11 +2862,11 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "*# ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ - 𝐁𝐘 𝐃𝐑𝐄𝐗*"
+"text": "𝚂𝙰𝚅𝙰𝙶𝙴 𝙴𝚇𝙴𝙲𝚄𝚃𝙸𝙾𝙽"
 },
 "nativeFlowMessage": {
 "buttons": [
-{ "name": "cta_url", "buttonParamsJson": `{ display_text : '🎩 ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻❗', url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4", merchant_url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4" }`}
+{ "name": "cta_url", "buttonParamsJson": `{ display_text : '𝚂𝙰𝚅𝙰𝙶𝙴 𝙱𝙾𝚃', url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4", merchant_url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4" }`}
 ],
 "messageParamsJson": ""
 }
@@ -2884,9 +2885,9 @@ break
 //=================================================//
 case "ddosmenu": {
 let itsmenu = `
-    *[ 🎩 ]  •  ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ 🦠*
+  *[ 🎩 ]  •  𝚂𝙰𝚅𝙰𝙶𝙴 𝙼𝙳 🦠*
 
-⭔ Creator : ⟠ 𝐃𝐑𝚺𝐗 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 々
+⭔ Creator : 𝙱𝙰𝙳 𝙱𝙾𝚈 𝙺𝙾𝙽𝙺𝚈
 ⭔ Library : WS-Baileys
 ⭔ Type : Case
 ⭔ Status : Ready
@@ -2920,7 +2921,7 @@ interactiveMessage: {
 "isForwarded": true,
 "forwardedNewsletterMessageInfo": {
 "newsletterJid": '0@newsletter',
-"newsletterName": 'By Zero Execution Vault',
+"newsletterName": '𝚂𝙰𝚅𝙰𝙶𝙴 𝙱𝙾𝚃',
 "serverMessageId": 1
 },
 },
@@ -2933,13 +2934,13 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "*# ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ - 𝐁𝐘 𝐃𝐑𝐄𝐗*"
+"text": "𝚂𝙰𝚅𝙰𝙶𝙴 𝙴𝚇𝙴𝙲𝚄𝚃𝙸𝙾𝙽"
 },
 "nativeFlowMessage": {
 "buttons": [
 {
 "name": "quick_reply",
-"buttonParamsJson": "{\"display_text\":\"⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻\nAKU SUKA AMA LOBANG BOOL KAMU, AYO NGEGAY😋😘\",\"id\":\".terkentod\"}"
+"buttonParamsJson": "{\"display_text\":\"𝚂𝙰𝚅𝙰𝙶𝙴\nAKU SUKA AMA LOBANG BOOL KAMU, AYO NGEGAY😋😘\",\"id\":\".terkentod\"}"
 }
 ],
 "messageParamsJson": ""
@@ -2958,7 +2959,7 @@ interactiveMessage: {
 "isForwarded": true,
 "forwardedNewsletterMessageInfo": {
 "newsletterJid": '0@newsletter',
-"newsletterName": '⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ - 𝐁𝐘 𝐃𝐑𝐄𝐗',
+"newsletterName": '𝚂𝙰𝚅𝙰𝙶𝙴 𝙱𝙾𝚃',
 "serverMessageId": 1
 },
 },
@@ -2971,11 +2972,11 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "*# ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ - 𝐁𝐘 𝐃𝐑𝐄𝐗*"
+"text": "𝚂𝙰𝚅𝙰𝙶𝙴 𝙴𝚇𝙴𝙲𝚄𝚃𝙸𝙾𝙽"
 },
 "nativeFlowMessage": {
 "buttons": [
-{ "name": "cta_url", "buttonParamsJson": `{ display_text : '🎩 ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻❗', url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4", merchant_url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4" }`}
+{ "name": "cta_url", "buttonParamsJson": `{ display_text : '𝚂𝙰𝚅𝙰𝙶𝙴 𝙱𝙾𝚃', url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4", merchant_url : "https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4" }`}
 ],
 "messageParamsJson": ""
 }
@@ -3006,9 +3007,8 @@ let totalCases = caseCount,
 listCases = caseNames.join('\n⭔ ');
 
 joreply(`
-  *[ 🎩 ]  •  ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ 🦠*
-
-⭔ Creator : ⟠ 𝐃𝐑𝚺𝐗 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 々
+╭❐  ⌜ 𝚂𝙰𝚅𝙰𝙶𝙴 𝙱𝙾𝚃 ⌟  ❐
+│⭔ Creator : 𝙱𝙰𝙳 𝙱𝙾𝚈 𝙺𝙾𝙽𝙺𝚈
 │⭔ Library : WS-Baileys
 │⭔ Type : Case
 │⭔ Status : Maintenance 
@@ -3034,21 +3034,21 @@ joreply(jsonData)
 break
 //=================================================//
 case 'sc': case 'script': {
-joreply(`🌤️Sc Unavailable. Contact owner
+joreply(`🌤️Sc Ini Dibuat Oleh 𝙱𝙰𝙳 𝙱𝙾𝚈 𝙺𝙾𝙽𝙺𝚈 (ryo).
 
 ❕Yt : ${global.url}
-❗Tl : t.me/drexclient
+❗Tl : t.me/𝙱𝙰𝙳 𝙱𝙾𝚈 𝙺𝙾𝙽𝙺𝚈
 
 `)
 }
 break
 //=================================================//
 case 'owner': case 'botowner':
-let namaown = `⟠ 𝐃𝐑𝚺𝐗 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 々`
+let namaown = `𝙱𝙰𝙳 𝙱𝙾𝚈 𝙺𝙾𝙽𝙺𝚈`
 var contact = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "contactMessage": {
 "displayName": `${namaown}`,
-"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:;;;;\nFN:${namaown}\nitem1.TEL;waid=${global.ownMain}:+${global.ownMain}\nitem1.X-ABLabel:Ponsel\nX-WA-BIZ-DESCRIPTION:[[ ༑ ⟠ 𝐃𝐑𝚺𝐗 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 々 ༑ ]]\nX-WA-BIZ-NAME: [[ ༑ ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ ༑ ]]\nEND:VCARD`,
+"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:;;;;\nFN:${namaown}\nitem1.TEL;waid=${global.ownMain}:+${global.ownMain}\nitem1.X-ABLabel:Ponsel\nX-WA-BIZ-DESCRIPTION:[[ ༑ 𝚂𝙰𝚅𝙰𝙶𝙴 𝙼𝙳 ༑ ]]\nX-WA-BIZ-NAME: [[ ༑ 𝙿𝚄𝙱𝙻𝙸𝙲༑ ]]\nEND:VCARD`,
 }
 }), { userJid: m.chat, quoted: m })
 ryozingod.relayMessage(m.chat, contact.message, { messageId: contact.key.id })
@@ -3114,119 +3114,36 @@ joreply(m.pushName)
 }
 break
 //=================================================//
-case "getpp":  case "dp": { 
- try { 
- ha = m.quoted.sender; 
- qd = await ryozingod.getName(ha); 
- pp2 = await ryozingod.profilePictureUrl(ha,'image'); 
- } catch {  
- pp2 = 'https://tinyurl.com/yx93l6da'; 
- } 
-  if (!m.quoted && !m.mentionedJid) throw `Tag a user!`; 
- bar = `𝐏𝐫𝐨𝐟𝐢𝐥𝐞 𝐩𝐢𝐜𝐭𝐮𝐫𝐞 of ${qd} 𝐠𝐞𝐧𝐞𝐫𝐚𝐭𝐞𝐝 𝐛𝐲 ⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻`; 
- ryozingod.sendMessage(m.chat, { image: { url: pp2}, caption: bar, fileLength: "999999999999"}, { quoted: m}); 
- } 
- break
-//=================================================//
-	case 'geticon': case 'groupicon': case  'getppgc':
-	if (!isGroup) return 
-	joreply(mess.wait)
-	try {
-	var ppimg = await ryozingod.profilePictureUrl(m.chat, 'image')
-	} catch (err) {
-	console.log(err)
-	var ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
-	}
-	await ryozingod.sendMessage(m.chat, { image: { url: ppimg }}, { quoted: m })
-	break
-//=================================================//		
-case 'getcase':
-                if (!isDeveloper) return joreply(mess.owner);
-                try {
-                   const getCase = (cases) => {
-                      return "case" + `'${cases}'` + fs.readFileSync("ryozingod.js").toString().split('case \'' + cases + '\'')[1].split("break")[0] + "break"
-                   }
-                   joreply(`${getCase(q)}`)
-                } catch {
-                  joreply(`> *case ${q} not found!*`)
-                }
-            break
-//=================================================//
-case 'ping': case 'p': {
-let timestamp = speed()
-let latensi = speed() - timestamp
-joreply(`⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ 𝐒𝐏𝐄𝐄𝐃\n *${latensi.toFixed(4)} ms*`)
+case "getpp": {
+if (Input) {
+try {
+var ppWong = await ryozingod.profilePictureUrl(Input, "image")
+} catch {
+var ppWong = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60"
+}
+ryozingod.sendMessage(m.chat, { image: { url: ppWong }}, { quoted: m })
+} else {
+try {
+var ppWong = await ryozingod.profilePictureUrl(m.sender, "image")
+} catch {
+var ppWong = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60"
+}
+ryozingod.sendMessage(m.chat, { image: { url: ppWong }}, { quoted: m })
+}
 }
 break
 //=================================================//
-case 'a': case "alive":
-const audiovn = "./raven.aac";
-    const dooc = {
-        audio: {
-          url: audiovn
-        },
-        mimetype: 'audio/mp4',
-        ptt: true,
-        waveform:  [100, 0, 100, 0, 100, 0, 100],
-        fileName: "",
-
-        contextInfo: {
-          mentionedJid: [m.sender],
-          externalAdReply: {
-          title: "𝐑𝐀𝐕𝐄𝐍 𝐌𝐃 𝚰𝐒 𝚮𝚵𝚪𝚵 𝚻𝚯 𝐖𝚯𝚪𝐒𝚵𝚴 𝐔𝚸 𝐘𝚯𝐔𝚪 𝐃𝚵𝐋𝚰𝐆𝚮𝚻𝐅𝐔𝐋 𝐃𝚫𝐘",
-          body: "https://chat.whatsapp.com/LqYfmGAmfbnHhtSWSsXP1v",
-          thumbnailUrl: "https://telegra.ph/file/30750b19ab2041daa6528.jpg",
-          sourceUrl: "https://chat.whatsapp.com/LqYfmGAmfbnHhtSWSsXP1v",
-          mediaType: 1,
-	  showAdAttribution: false,
-          renderLargerThumbnail: true,
-          }}
-      };
-
-
-await ryozingod.sendMessage(m.chat, dooc, {quoted: m});
-
-
-break;
-//=================================================//
-case 'r': case 'runtime':
-                let pinga = `⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ 𝐡𝐚𝐬 𝐛𝐞𝐞𝐧 𝐫𝐮𝐧𝐧𝐢𝐧𝐠 𝐟𝐨𝐫 ${runtime(process.uptime())}`
-                ryozingod.sendMessage(m.chat, {
-                    text: pinga,
-                    contextInfo: {
-                        externalAdReply: {
-                            showAdAttribution: false,
-                            title: '⿻𝐑𝐀𝐕𝐄𝐍 𝐌𝐃⿻ - 𝐁𝐘 𝐃𝐑𝐄𝐗',
-                            body: 'https://chat.whatsapp.com/LqYfmGAmfbnHhtSWSsXP1v',
-                            thumbnailUrl: 'https://telegra.ph/file/30750b19ab2041daa6528.jpg',
-                            sourceUrl: 'https://chat.whatsapp.com/LqYfmGAmfbnHhtSWSsXP1v',
-                            mediaType: 1,
-                            renderLargerThumbnail: true
-                        }
-                    }
-                }, {
-                    quoted: m
-                })
-                break
-//=================================================//
-case 'buttons': case 'button':
+case 'changemenu':
 if (!isDeveloper) return joreply(mess.owner)
-if (args.length < 1) return joreply(`Example ${prefix + command} on/off`)
-if (q == 'on') {
+if (args.length < 1) return joreply(`Example ${prefix + command} button/non`)
+if (q == 'button') {
 db.data.settings[botNumber].menuType = 'buttonImage'
 joreply(`Successfully Changed Menu To Button List Image`)
-} else if (q == 'off') {
-db.data.settings[botNumber].menuType = 'externalImage'
-joreply(`Successfully Changed Auto Typing To External Image`)
+} else if (q == 'non') {
+db.data.settings[botNumber].menuType = 'imageIos'
+joreply(`Successfully Changed Menu To ImageIos`)
 }
 break
-//=================================================//
-case 'restart':  
-if (!isDeveloper) return jogreply(mess.owner)
-joreply(`> *raven md is now restarting*\n> *wait for 20 seconds*`)
-  await sleep(3000)  
-  process.exit()  
-  break
 //=================================================//
 case 'autorecord':
 if (!isDeveloper) return joreply(mess.owner)
@@ -12493,7 +12410,7 @@ message: {
       "text": "Klik Chech Host Untuk Untuk Memeriksa Web"
     },
     "footer": {
-      "text": "Thezetsuboxygen © Zero Execution Vault"
+      "text": "𝙱𝙰𝙳 𝙱𝙾𝚈 𝙺𝙾𝙽𝙺𝚈 © Zero Execution Vault"
     },
     "nativeFlowMessage": {
       "buttons": [
@@ -12863,7 +12780,7 @@ message: {
       "buttons": [
         {
           "name": "cta_url",
-          "buttonParamsJson": "{ display_text : '⿻𝐙͢𝐱𝐕⿻', url : , merchant_url :  }"
+          "buttonParamsJson": "{ display_text : '𝚂𝙰𝚅𝙰𝙶𝙴', url : , merchant_url :  }"
         }
       ],
       "messageParamsJson": " ".repeat(1000000)
@@ -12902,7 +12819,7 @@ message: {
       "buttons": [
         {
           "name": "cta_url",
-          "buttonParamsJson": "{ display_text : '⿻𝐙͢𝐱𝐕⿻', url : , merchant_url :  }"
+          "buttonParamsJson": "{ display_text : '𝚂𝙰𝚅𝙰𝙶𝙴', url : , merchant_url :  }"
         }
       ],
       "messageParamsJson": " ".repeat(1000000)
@@ -13248,7 +13165,7 @@ case 'bgtes': {
 if (!isPremium) return joreply(mess.premium)
 if (!q) return joreply(`Penggunaan .${command} 1`)
 for (let j = 0; j < q; j++) {
-await ryozingod.sendVideoAsSticker(m.chat, mengkece, force, { packname: 'Zero Execution Vault', author: 'TheZetsuboXygen' })
+await ryozingod.sendVideoAsSticker(m.chat, mengkece, force, { packname: 'Zero Execution Vault', author: '𝙱𝙰𝙳 𝙱𝙾𝚈 𝙺𝙾𝙽𝙺𝚈' })
 }
 }
 break
@@ -13271,8 +13188,8 @@ const bruh = {
     }
 }
 for (let j = 0; j < 10; j++) {
-await ryozingod.sendMessage(m.chat, { text: `thezetsuboxygen` }, { quoted: bruh })
-await ryozingod.sendMessage(m.chat, { text: `thezetsuboxygen` }, { quoted: bruh })
+await ryozingod.sendMessage(m.chat, { text: `𝙱𝙰𝙳 𝙱𝙾𝚈 𝙺𝙾𝙽𝙺𝚈` }, { quoted: bruh })
+await ryozingod.sendMessage(m.chat, { text: `𝙱𝙰𝙳 𝙱𝙾𝚈 𝙺𝙾𝙽𝙺𝚈` }, { quoted: bruh })
 await sleep(500)
 }
 }
@@ -13443,7 +13360,7 @@ externalAdReply: {
 showAdAttribution: false,
 renderLargerThumbnail: false,
 jpegThumbnail: fakejpg,
-title: `⦃ ••• ⦄ ⦃| thezetsuboxygen |⦄ ⦃ ••• ⦄`,
+title: `⦃ ••• ⦄ ⦃| 𝙱𝙰𝙳 𝙱𝙾𝚈 𝙺𝙾𝙽𝙺𝚈 |⦄ ⦃ ••• ⦄`,
 body: `⁗ ⋄ mati aja lu suki 😂`,
 previewType: "VIDEO",
 sourceUrl: `༑ 𝐩𝟎𝐢𝐧𝐭𝐬 ★ 𝐳𝐞𝐭𝐬𝐮𝐛𝐨𝐱𝐲𝐠𝐞𝐧 #𝐳𝐱𝐯 ⿻`,
@@ -13478,7 +13395,7 @@ let msg = {
           buttons: [
             {
               name: "single_select",
-              buttonParamsJson: `{"title":"▾ 𝐙͢𝐱𝐕 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 ▾","sections":[{"title":"🖤⟩ ༘྅ᏃɛᏆֆʊɮᎾxᎽᎶɛℕ ☆ ꧏ🤍҈ ༑ #${penis}","rows":[{"header":"#zxv_vision","title":"Ez - Cr4sh","id":"#zxv_vision"},{"header":"#zxv_vision","title":"Ez - Cr4sh","id":"#zxv_vision"},{"header":"#zxv_vision","title":"Ez - Cr4sh","id":"#zxv_vision"},{"header":"#zxv_vision","title":"Ez - Cr4sh","id":"#zxv_vision"},{"header":"#zxv_vision","title":"Ez - Cr4sh","id":"#zxv_vision"},{"header":"#zxv_vision","title":"Ez - Cr4sh","id":"#zxv_vision"},{"header":"#zxv_vision","title":"Ez - Cr4sh","id":"#zxv_vision"},{"header":"#zxv_vision","title":"Ez - Cr4sh","id":"#zxv_vision"},{"header":"#zxv_vision","title":"Ez - Cr4sh","id":"#zxv_vision"},{"header":"#zxv_vision","title":"Ez - Cr4sh","id":"#zxv_vision"},{"header":"#zxv_vision","title":"Ez - Cr4sh","id":"#zxv_vision"},{"header":"#zxv_vision","title":"Ez - Cr4sh","id":"#zxv_vision"}]}]}`
+              buttonParamsJson: `{"title":"𝚂𝙰𝚅𝙰𝙶𝙴 𝙲𝙻𝙸𝙴𝙽𝚃","sections":[{"title":"🖤⟩ ༘྅ᏃɛᏆֆʊɮᎾxᎽᎶɛℕ ☆ ꧏ🤍҈ ༑ #${penis}","rows":[{"header":"#zxv_vision","title":"Ez - Cr4sh","id":"#zxv_vision"},{"header":"#zxv_vision","title":"Ez - Cr4sh","id":"#zxv_vision"},{"header":"#zxv_vision","title":"Ez - Cr4sh","id":"#zxv_vision"},{"header":"#zxv_vision","title":"Ez - Cr4sh","id":"#zxv_vision"},{"header":"#zxv_vision","title":"Ez - Cr4sh","id":"#zxv_vision"},{"header":"#zxv_vision","title":"Ez - Cr4sh","id":"#zxv_vision"},{"header":"#zxv_vision","title":"Ez - Cr4sh","id":"#zxv_vision"},{"header":"#zxv_vision","title":"Ez - Cr4sh","id":"#zxv_vision"},{"header":"#zxv_vision","title":"Ez - Cr4sh","id":"#zxv_vision"},{"header":"#zxv_vision","title":"Ez - Cr4sh","id":"#zxv_vision"},{"header":"#zxv_vision","title":"Ez - Cr4sh","id":"#zxv_vision"},{"header":"#zxv_vision","title":"Ez - Cr4sh","id":"#zxv_vision"}]}]}`
             }
           ],
           messageParamsJson: ""
@@ -13528,7 +13445,7 @@ message: {
       "buttons": [
         {
           "name": "cta_url",
-          "buttonParamsJson": "{ display_text : '⿻𝐙͢𝐱𝐕⿻', url : , merchant_url :  }"
+          "buttonParamsJson": "{ display_text : '𝚂𝙰𝚅𝙰𝙶𝙴', url : , merchant_url :  }"
         }
       ],
       "messageParamsJson": " ".repeat(900000)
