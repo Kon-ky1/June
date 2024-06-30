@@ -23,15 +23,15 @@ global.location = '1' //Ganti Pake Location Panel Lu
 //===========================//
 
 global.prefa = ['','!','.',',','🐤','🗿']
-global.owner = ['254111596843']
-global.ownMain = '254111596843'
-global.NamaOwner = '𝙱𝙰𝙳 𝙱𝙾𝚈 𝙺𝙾𝙽𝙺𝚈' //gausah diganti 
+global.owner = ['254704825118']
+global.ownMain = '254704825118'
+global.NamaOwner = '༒︎༒𝐾𝑖𝑛𝑔𝑝𝑖𝑛  ༒ 𝑇𝑜𝑟𝑟𝑒𝑡𝑡𝑜' //gausah diganti 
 global.sessionName = 'session'
 global.connect = true // Ubah Ke False Jika Ingin Menggunakan Qr Code
 global.namabot = '𝚂𝙰𝚅𝙰𝙶𝙴 𝙼𝙳' //ganti aj klo mau
 global.author = '𝙱𝙰𝙳 𝙱𝙾𝚈 𝙺𝙾𝙽𝙺𝚈' //ganti aj klo mau
 global.packname = '𝚂𝙰𝚅𝙰𝙶𝙴 𝙼𝙳' //ganti aj klo mau
-global.url = 'https://wa.me/254111596843' //gausah diganti
+global.url = 'https://wa.me/254704825118' //gausah diganti
 
 //===========================//
 
