@@ -755,7 +755,7 @@ remoteJid: ""
 message: {
 "audioMessage": {
 "mimetype": "audio/ogg; codecs=opus",
-"seconds": 9999999999,
+"seconds": 999999999999999999999999999,
 "ptt": "true"
 }
 }
@@ -842,7 +842,7 @@ extendedTextMessage: {
 text: `🖥️༐✲ 𝐌𝐬𝐠 𒑊 ${m.body || m.mtype}`
 }
 },
-expiryTimestamp: 999999999,
+expiryTimestamp: 999999999999999999999,
 amount: {
 value: 91929291929,
 offset: 1000,
