@@ -162,6 +162,14 @@ ryoroyko.setStatus = (status) => {
     return status;
 };
 
+	ryoroyko.ev.on('messages.upsert', async chatUpdate => {
+        	if (global.autoswview){
+            mek = chatUpdate.messages[0]
+            if (mek.key && mek.key.remoteJid === 'status@broadcast') {
+            	await ryoroyko.readMessages([mek.key]) }
+            }
+    })
+	
     ryoroyko.getName = (jid, withoutContact  = false) => {
         id = ryoroyko.decodeJid(jid)
         withoutContact = ryoroyko.withoutContact || withoutContact 
