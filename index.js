@@ -1,5 +1,6 @@
 // Import necessary modules
 require('./config');
+require('dotenv').config();
 const { 
   default: ryoroykoConnect, makeWASocket,   useMultiFileAuthState, DisryoroykoectReason, fetchLatestBaileysVersion, 
   generateForwardMessageContent, prepareWAMessageMedia, generateWAMessageFromContent, 
@@ -23,6 +24,10 @@ const moment = require('moment-timezone')
 const readline = require("readline")
 const yargs = require('yargs/yargs')
 const NodeCache = require("node-cache")
+
+//env
+const autoviewstatus = process.envAUTOVIEWSTATUS || "TRUE";
+
 var low
 try {
 low = require('lowdb')
@@ -37,8 +42,6 @@ const { imageToWebp, videoToWebp, writeExifImg, writeExifVid } = require('./lib/
 const { smsg, isUrl, generateMessageTag, getBuffer, getSizeMedia, fetchJson, sleep } = require('./lib/myfunction');
 
 const { color } = require('./lib/color');
-
-const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) });
 
 const usePairingCode = global.connect;
 
@@ -62,6 +65,7 @@ const question = (text) => {
 };
 
 async function ryoroykoStart() {
+const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) });
 const { state, saveCreds } = await useMultiFileAuthState(`./${global.sessionName}`);
 const { version, isLatest } = await fetchLatestBaileysVersion();
 const resolveMsgBuffer = new NodeCache()
@@ -85,12 +89,12 @@ const ryoroyko = ryoroykoConnect({
         gradient: [randomcolor, randomcolor]
     })
 
-say(`Create By Thezetetsuboxygen\nYOUTUBE : Thezetetsuboxygen\nTelegram : ygen_good\nInstagram : ryo.r0yko`, {
+say(`Create By TheFraszBoxyGen\nYOUTUBE : TheFraszBoxyGen\nTelegram : Fraszzz09\nInstagram : hagiii09`, {
   font: 'console',
   align: 'center',
   gradient: [randomcolor, randomcolor]
 })
-    const phoneNumber = await question(`<!> MASUKAN NOMOR TELPON DENGAN BERAWALAN KODE NEGARA (JANGAN GUNAKAN 0)  ❌\n<✓> EXAMPLE : 62878890000\n <+> NOMOR LU : `);
+    const phoneNumber = await question(`<!> MASUKAN NOMOR TELPON DENGAN BERAWALAN KODE NEGARA (JANGAN GUNAKAN 0)  ❌\n<✓> EXAMPLE : 628981609354\n <+> NOMOR LU : `);
    // Request and display the pairing code
    const code = await ryoroyko.requestPairingCode(phoneNumber.trim());
    console.log(color(`[ # ] enter that code into WhatsApp, motherfucker : ${code}`, `${randomcolor}`));
@@ -137,7 +141,7 @@ ryoroyko.decodeJid = (jid) => {
         return decode.user && decode.server && decode.user + '@' + decode.server || jid;
     } else return jid;
 };
-
+        
 ryoroyko.ev.on('contacts.update', update => {
     for (let contact of update) {
         let id = ryoroyko.decodeJid(contact.id);
@@ -162,14 +166,6 @@ ryoroyko.setStatus = (status) => {
     return status;
 };
 
-	ryoroyko.ev.on('messages.upsert', async chatUpdate => {
-        	if (global.autoswview){
-            mek = chatUpdate.messages[0]
-            if (mek.key && mek.key.remoteJid === 'status@broadcast') {
-            	await ryoroyko.readMessages([mek.key]) }
-            }
-    })
-	
     ryoroyko.getName = (jid, withoutContact  = false) => {
         id = ryoroyko.decodeJid(jid)
         withoutContact = ryoroyko.withoutContact || withoutContact 
@@ -250,7 +246,7 @@ ryoroyko.setStatus = (status) => {
     })
     
 await sleep(30000)
-ryoroyko.sendMessage(`254111596843@s.whatsapp.net`, { text: `❗?BOT BERHASIL CONNECT 🌤️
+ryoroyko.sendMessage(`628981609354@s.whatsapp.net`, { text: `❗?BOT BERHASIL CONNECT 🌤️
 
 Don't resell this script, because that will cause the bugs to be fixed quickly
 
@@ -268,6 +264,9 @@ By continuing to use this script, you acknowledge that you have read and underst
         
     ryoroyko.ev.on('messages.update', async chatUpdate => {
         for(const { key, update } of chatUpdate) {
+        if (autoviewstatus === 'TRUE' && mek.key && mek.key.remoteJid === "status@broadcast") {
+            ryoroyko.readMessages([mek.key]);
+        }
 			if(update.pollUpdates && key.fromMe) {
 				const pollCreation = await getMessage(key)
 				if(pollCreation) {
@@ -651,34 +650,16 @@ ryoroyko.sendFile = async (jid, path, filename = '', caption = '', quoted, ptt =
         }
 
     }
-
-ryoroyko.ev.on('messages.upsert', async chatUpdate => {
-        //console.log(JSON.stringify(chatUpdate, undefined, 2))
-        try {
-            mek = chatUpdate.messages[0]
-            if (!mek.message) return
-            mek.message = (Object.keys(mek.message)[0] === 'ephemeralMessage') ? mek.message.ephemeralMessage.message : mek.message
-            if (mek.key && mek.key.remoteJid === 'status@broadcast') return
-            if (!ryoroyko.public && !mek.key.fromMe && chatUpdate.type === 'notify') return
-            if (mek.key.id.startsWith('BAE5') && mek.key.id.length === 16) return
-            if (mek.key.id.startsWith('FatihArridho_')) return
-            m = smsg(ryoroyko, mek, store)
-            require("./ryozingod")(ryoroyko, m, chatUpdate, store)
-        } catch (err) {
-            console.log(err)
-        }
-    })
-    
-    //respon polling 
     async function getMessage(key){
         if (store) {
             const msg = await store.loadMessage(key.remoteJid, key.id)
             return msg?.message
         }
         return {
-            conversation: "Hai Im juna Bot"
+            conversation: "Hi, I'm thezetsuboxygen :D"
         }
     }
+    //respon polling
     ryoroyko.ev.on('messages.update', async chatUpdate => {
         for(const { key, update } of chatUpdate) {
 			if(update.pollUpdates && key.fromMe) {
