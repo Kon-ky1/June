@@ -23,8 +23,8 @@ global.location = '1' //Ganti Pake Location Panel Lu
 //===========================//
 
 global.prefa = ['','!','.',',','🐤','🗿']
-global.owner = ['2540656294140']
-global.ownMain = '2540656294140'
+global.owner = ['254111596843']
+global.ownMain = '254111596843'
 global.NamaOwner = '𝙱𝙰𝙳 𝙱𝙾𝚈 𝙺𝙾𝙽𝙺𝚈' //gausah diganti 
 global.sessionName = 'session'
 global.connect = true // Ubah Ke False Jika Ingin Menggunakan Qr Code
